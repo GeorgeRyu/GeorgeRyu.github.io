@@ -1,0 +1,12 @@
+@import "compass/css3";
+@import "compass";
+
+/*	COMMON  */
+@import "partials/variables";
+@import "partials/base";
+@import "partials/header";
+
+/*	EACH PAGE  */
+@import "page/front-page";
+@import "page/work";
+@import "page/about";

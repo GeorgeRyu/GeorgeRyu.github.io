@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>linkdin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-678.000000, -3559.000000)" fill="#171717">
+            <g id="CONTACT" transform="translate(0.000000, 3310.000000)">
+                <g id="contact-links" transform="translate(526.000000, 241.000000)">
+                    <g id="linkdIn" transform="translate(144.000000, 0.000000)">
+                        <g id="linkdin" transform="translate(8.000000, 8.000000)">
+                            <path d="M12.0508,4.7338 C14.3068,4.7338 15.9998,6.2078 15.9998,9.3778 L15.9998,15.2928 L12.5708,15.2928 L12.5708,9.7728 C12.5708,8.3868 12.0738,7.4388 10.8318,7.4388 C9.8858,7.4388 9.3208,8.0798 9.0718,8.6948 C8.9818,8.9158 8.9588,9.2208 8.9588,9.5308 L8.9588,15.2928 L5.5298,15.2928 C5.5298,15.2928 5.5738,5.9428 5.5298,4.9758 L8.9588,4.9758 L8.9588,6.4368 C8.9528,6.4478 8.9448,6.4608 8.9368,6.4708 L8.9588,6.4708 L8.9588,6.4368 C9.4158,5.7328 10.2308,4.7338 12.0508,4.7338 Z" id="Fill-1"></path>
+                            <path d="M1.9395,-0.0001 C0.7675,-0.0001 0.0005,0.7709 0.0005,1.7839 C0.0005,2.7729 0.7445,3.5669 1.8945,3.5669 L1.9175,3.5669 C3.1135,3.5669 3.8575,2.7729 3.8575,1.7839 C3.8355,0.7709 3.1135,-0.0001 1.9395,-0.0001" id="Fill-3"></path>
+                            <polygon id="Fill-6" points="0.202 15.293 3.633 15.293 3.633 4.976 0.202 4.976"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

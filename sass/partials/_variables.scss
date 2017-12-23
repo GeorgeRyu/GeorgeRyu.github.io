@@ -1,0 +1,82 @@
+
+$yellow: #DEDC00;
+$black: #171717;
+$darkGray: #706F6F;
+$midleGray: #9D9D9C;
+$lightGray: #DADADA;
+$bgWhite: #FAFAFA;
+
+
+
+/* -----------------------------
+	set buger btn base layout
+----------------------------- */
+
+%btnset {
+	display: inline-block;
+	transition: all .4s;
+	box-sizing: border-box;
+}
+
+@mixin prefix-transform($parameters) {
+  -webkit-transform : $parameters;
+  -moz-transform    : $parameters;
+  -ms-transform     : $parameters;
+  transform         : $parameters;	
+}
+
+
+/* -----------------------------
+	set animation of menu contents
+----------------------------- */
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    margin-left: -24px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 24px;
+  }
+}
+
+@keyframes fadeOutRight {
+  0% {
+    opacity: 0;
+    margin-left: 24px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: -24px;
+  }
+}
+
+
+
+
+%hoverLine {
+	
+	&:after {
+		content: "";
+		display: block;
+		width: 0%;
+		height: 2px;
+	    margin: 4px auto 0;
+		background-color: $yellow;
+		transition: width .3s ease;
+	}					
+
+	&:hover::after {
+		width: 100%;
+	}
+}
+
+
+
+
+@mixin phone {
+	@media only screen and (max-width: 768px) {
+		@content;
+	}
+}
