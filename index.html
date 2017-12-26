@@ -22,12 +22,12 @@
 			<ul class="wrap-links">
 				<li><a href="work01.html">WORK</a></li>
 				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="index.html#contact">CONTACT</a></li>
+				<li><a href="#contact">CONTACT</a></li>
 			</ul>
 			<ul class="wrap-links-sp">
 				<li><a href="work01.html">WORK</a></li>
 				<li><a href="about.html">ABOUT</a></li>
-				<li><a id="shortcut-contact" href="index.html#contact">CONTACT</a></li>
+				<li><a id="shortcut-contact" href="#contact">CONTACT</a></li>
 			</ul>			
 		</nav>
 	</header>
@@ -79,7 +79,7 @@
 					<a href="work01.html">
 						<img class="front-page-1" src="images/work_01.jpg" alt="work-images">
 					</a>
-					<div class="rec rectangle-01"></div>
+					<div class="rec rectangle-01"></div>						
 				</figure>
 				<div class="teaser-ditail work1">
 					<p class="type">Web site</p>
@@ -414,88 +414,88 @@
 
 			} else {
 				var workImage1 = new ScrollMagic.Scene({
-						triggerElement: '.front-page-1',
-						triggerHook: 0.9
-					}).on('start', function () {
+					triggerElement: '.front-page-1',
+					triggerHook: 0.9
+				}).on('start', function () {
 
-						var heightImg = $('.front-page-1').parent(),
-							heightRectangle = $('.rectangle-01'),
-							line1 = $('.work1 .type'),
-							line2 = $('.work1 .title-work'), 
-							line3 = $('.work1 .explan-s'),
-							tl = new TimelineLite();
+					var heightImg = $('.front-page-1').parent(),
+						heightRectangle = $('.rectangle-01'),
+						line1 = $('.work1 .type'),
+						line2 = $('.work1 .title-work'), 
+						line3 = $('.work1 .explan-s'),
+						tl = new TimelineLite();
 
-						tl							
-							.to(heightImg, .4, {height: '40rem', ease:Power2.easeIn})
-							.to(heightRectangle, .4, {height: '120%', ease:Power2.easeIn})
-							.add('line1')
-							.to(line1, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut})
-							.to(line2, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.3')
-							.to(line3, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.6');
-					})
-					// .addIndicators({
-					// 	name: 'contactTitle',
-					// 	colorTrigger: 'black',
-					// 	colorStart: '#75c695',
-					// 	colorEnd: 'pink'
-					// })
-					.addTo(controller);	
+					tl							
+						.to(heightImg, .4, {height: '40rem', ease:Power2.easeIn})
+						.to(heightRectangle, .4, {height: '120%', ease:Power2.easeIn})
+						.add('line1')
+						.to(line1, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut})
+						.to(line2, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.3')
+						.to(line3, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.6');
+				})
+				// .addIndicators({
+				// 	name: 'contactTitle',
+				// 	colorTrigger: 'black',
+				// 	colorStart: '#75c695',
+				// 	colorEnd: 'pink'
+				// })
+				.addTo(controller);	
 
 				var workImage2 = new ScrollMagic.Scene({
-						triggerElement: '.front-page-2',
-						triggerHook: 0.9
-					}).on('start', function () {
+					triggerElement: '.front-page-2',
+					triggerHook: 0.9
+				}).on('start', function () {
 
-						var heightImg = $('.front-page-2').parent(),
-							heightRectangle = $('.rectangle-02'), 
-							line1 = $('.work2 .type'),
-							line2 = $('.work2 .title-work'), 
-							line3 = $('.work2 .explan-s'),
-							tl = new TimelineLite();
+					var heightImg = $('.front-page-2').parent(),
+						heightRectangle = $('.rectangle-02'), 
+						line1 = $('.work2 .type'),
+						line2 = $('.work2 .title-work'), 
+						line3 = $('.work2 .explan-s'),
+						tl = new TimelineLite();
 
-						tl
-							.to(heightImg, .4, {height: '40rem', ease:Power2.easeIn})
-							.to(heightRectangle, .4, {height: '60%', ease:Power2.easeIn})
-							.add('line1')
-							.to(line1, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut})
-							.to(line2, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.3')
-							.to(line3, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.6');
-					})
-					// .addIndicators({
-					// 	name: 'contactTitle',
-					// 	colorTrigger: 'black',
-					// 	colorStart: '#75c695',
-					// 	colorEnd: 'pink'
-					// })
-					.addTo(controller);	
+					tl
+						.to(heightImg, .4, {height: '40rem', ease:Power2.easeIn})
+						.to(heightRectangle, .4, {height: '60%', ease:Power2.easeIn})
+						.add('line1')
+						.to(line1, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut})
+						.to(line2, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.3')
+						.to(line3, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.6');
+				})
+				// .addIndicators({
+				// 	name: 'contactTitle',
+				// 	colorTrigger: 'black',
+				// 	colorStart: '#75c695',
+				// 	colorEnd: 'pink'
+				// })
+				.addTo(controller);	
 
 				var workImage3 = new ScrollMagic.Scene({
-						triggerElement: '.front-page-3',
-						triggerHook: 0.9
-					}).on('start', function () {
+					triggerElement: '.front-page-3',
+					triggerHook: 0.9
+				}).on('start', function () {
 
-						var heightImg = $('.front-page-3').parent(),
-							heightRectangle = $('.rectangle-03'), 
-							line1 = $('.work3 .type'),
-							line2 = $('.work3 .title-work'), 
-							line3 = $('.work3 .explan-s'),
-							tl = new TimelineLite();
+					var heightImg = $('.front-page-3').parent(),
+						heightRectangle = $('.rectangle-03'), 
+						line1 = $('.work3 .type'),
+						line2 = $('.work3 .title-work'), 
+						line3 = $('.work3 .explan-s'),
+						tl = new TimelineLite();
 
-						tl
-							.to(heightImg, .4, {height: '40rem', ease:Power2.easeIn})
-							.to(heightRectangle, .4, {height: '140%', ease:Power2.easeIn})
-							.add('line1')
-							.to(line1, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut})
-							.to(line2, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.3')
-							.to(line3, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.6');
-					})
-					// .addIndicators({
-					// 	name: 'contactTitle',
-					// 	colorTrigger: 'black',
-					// 	colorStart: '#75c695',
-					// 	colorEnd: 'pink'
-					// })
-					.addTo(controller);	
+					tl
+						.to(heightImg, .4, {height: '40rem', ease:Power2.easeIn})
+						.to(heightRectangle, .4, {height: '140%', ease:Power2.easeIn})
+						.add('line1')
+						.to(line1, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut})
+						.to(line2, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.3')
+						.to(line3, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.6');
+				})
+				// .addIndicators({
+				// 	name: 'contactTitle',
+				// 	colorTrigger: 'black',
+				// 	colorStart: '#75c695',
+				// 	colorEnd: 'pink'
+				// })
+				.addTo(controller);	
 
 
 				// UP SCROLL IN FRONT PAGES
@@ -539,7 +539,52 @@
 				// 	colorStart: '#75c695',
 				// 	colorEnd: 'pink'
 				// })
-				.addTo(controller);														
+				.addTo(controller);	
+
+ 
+				var rectangle1 = new ScrollMagic.Scene({
+					triggerElement: '.work1',
+					duration: '120%',
+					triggerHook:0.9
+				})
+				.setTween('.rectangle-01', {top: '-90px'})
+				// .addIndicators({
+				// 	name: 'duration1',
+				// 	colorTrigger: 'black',
+				// 	colorStart: '#75c695',
+				// 	colorEnd: 'pink'
+				// })
+				.addTo(controller);	
+ 
+				var rectangle2 = new ScrollMagic.Scene({
+					triggerElement: '.work2',
+					duration: '120%',
+					triggerHook:0.9
+				})
+				.setTween('.rectangle-02', {top: '160px'})
+				// .addIndicators({
+				// 	name: 'duration1',
+				// 	colorTrigger: 'black',
+				// 	colorStart: '#75c695',
+				// 	colorEnd: 'pink'
+				// })
+				.addTo(controller);					
+			
+ 
+				var rectangle3 = new ScrollMagic.Scene({
+					triggerElement: '.work3',
+					duration: '120%',
+					triggerHook:0.9
+				})
+				.setTween('.rectangle-03', {top: '-200px'})
+				// .addIndicators({
+				// 	name: 'duration1',
+				// 	colorTrigger: 'black',
+				// 	colorStart: '#75c695',
+				// 	colorEnd: 'pink'
+				// })
+				.addTo(controller);	
+
 			}
 
 		})(jQuery);	
