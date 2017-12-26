@@ -535,7 +535,7 @@ header .menu-content.open-menu li:nth-of-type(4) {
 /* line 138, ../sass/page/_front-page.scss */
 .work-area .inner .teaser figure a:hover + .rec {
   opacity: 0;
-  /*filter: blur(20px);*/
+  filter: blur(20px);
 }
 /* line 143, ../sass/page/_front-page.scss */
 .work-area .inner .teaser figure a:hover {
@@ -563,7 +563,7 @@ header .menu-content.open-menu li:nth-of-type(4) {
   background: #DEDC00;
   position: absolute;
   right: -12%;
-  top: -10%;
+  top: 10px;
   z-index: -1;
 }
 /* line 173, ../sass/page/_front-page.scss */
@@ -573,7 +573,7 @@ header .menu-content.open-menu li:nth-of-type(4) {
   background: #DEDC00;
   position: absolute;
   left: -6%;
-  top: 60%;
+  top: 260px;
   z-index: -1;
 }
 /* line 183, ../sass/page/_front-page.scss */
@@ -583,7 +583,7 @@ header .menu-content.open-menu li:nth-of-type(4) {
   background: #DEDC00;
   position: absolute;
   left: 46%;
-  top: -20%;
+  top: -100px;
   z-index: -1;
 }
 /* line 194, ../sass/page/_front-page.scss */
