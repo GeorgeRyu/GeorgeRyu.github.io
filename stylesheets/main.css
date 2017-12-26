@@ -573,7 +573,7 @@ header .menu-content.open-menu li:nth-of-type(4) {
   background: #DEDC00;
   position: absolute;
   left: -6%;
-  top: 260px;
+  top: 300px;
   z-index: -1;
 }
 /* line 183, ../sass/page/_front-page.scss */
@@ -583,7 +583,7 @@ header .menu-content.open-menu li:nth-of-type(4) {
   background: #DEDC00;
   position: absolute;
   left: 46%;
-  top: -100px;
+  top: -60px;
   z-index: -1;
 }
 /* line 194, ../sass/page/_front-page.scss */
