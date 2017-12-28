@@ -59,9 +59,23 @@
 
 	<section class="main-view">
 		<div class="senter-object">
-			<p class="greeting">Hi, I'm<br>Ryu Takahashi</p>
+			<div class="greeting">
+				<p class="greetig-1">
+					<span>Hi, I'm</span>
+				</p>
+				<p class="greetig-2">
+					<span>Ryu Takahashi</span>
+				</p>
+			</div>
 			<div class="line-main"></div>
-			<p class="my-job prata">Front-end Developer,<br>UI Designer</p>
+			<div class="my-job">
+				<p class="my-job-1 prata" >
+					<span>Front-end Developer,</span>
+				</p>
+				<p class="my-job-2 prata">
+					<span>UI Designer</span>
+				</p>
+			</div>
 			<div class="square"></div>
 		</div>
 		<a href="#work" class="scroll">
@@ -195,8 +209,10 @@
 				senterObject = $('.senter-object'),
 				square = $('.square'),
 				lineMain = $('.line-main'),
-				greeting = $('.greeting'),
-				job = $('.my-job'),
+				greeting1 = $('.greeting .greetig-1 span'),
+				greeting2 = $('.greeting .greetig-2 span'),
+				job1 = $('.my-job .my-job-1 span'),
+				job2 = $('.my-job .my-job-2 span'),
 				scroll = $('.scroll'),
 				arrow = $('.arrow'),
 				btnMenu = $('.btn-menu')
@@ -211,15 +227,17 @@
 				.to(senterObject, 1, {opacity: 1,  ease:Power4.easeOut})
 				.from(square, 1, {autoAlpha: 0, width: 0, rotation: 90, ease:Power4.easeOut}, 'senterObject')
 				.from(lineMain, .5, {width: 0, ease: Power2.easeOut}, '-=.2')
-				.add('greeting')
-				.from(greeting, .5, {autoAlpha: 0, y: 26, ease:Power2.easeOut})
-				.from(job, .5, {autoAlpha: 0, y: -26, ease:Power2.easeOut}, 'greeting')
+				.add('greeting1')
+				.to(greeting1, .4, {y: 0, ease:Power2.easeIn}, 'greeting1')
+				.to(greeting2, .4, {y: 0, ease:Power2.easeIn}, 'greeting1')
+				.to(job1, .4, {y: 0, ease:Power2.easeIn}, 'greeting1')
+				.to(job2, .4, {y: 0, ease:Power2.easeIn}, 'greeting1')
 				.add('mainImg')
-				.fromTo(mainImg, 1.5, {scale: 1.1, autoAlpha: 0, ease:Power4.easeOut}, {scale: 1, autoAlpha: 1, ease:Power4.easeOut}, 'mainImg')
+				.fromTo(mainImg, 1.5, {scale: 1.1, autoAlpha: 0, ease:Power4.easeOut}, {scale: 1, autoAlpha: 1, ease:Power4.easeOut})
 				.add('scroll')
-				.to(scroll, 1, {autoAlpha: 1, ease:Power4.easeOut})
-				.from(arrow, 1, {y: -100}, 'scroll')
-				.from(btnMenu, 1, {x: 40, autoAlpha: 0}, 'scroll');
+				.to(scroll, .8, {autoAlpha: 1, ease:Power4.easeOut})
+				.from(arrow, .8, {y: -100, ease:Power2.easeOut}, 'scroll')
+				.from(btnMenu, .8, {x: 40, autoAlpha: 0, ease:Power2.easeOut}, 'scroll');
 
 			// LOADER TIMLINE
 			tlLoader
