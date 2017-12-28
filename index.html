@@ -82,6 +82,10 @@
 					<div class="rec rectangle-01"></div>						
 				</figure>
 				<div class="teaser-ditail work1">
+					<a class="link-work-sp" href="work01.html">
+						<span class="text-link">More</span>
+						<span class="bg-link"></span>
+					</a>
 					<p class="type">Web site</p>
 					<br>
 					<h3 id="stretch1" class="title-work">
@@ -101,6 +105,10 @@
 					<div class="rec rectangle-02"></div>
 				</figure>
 				<div class="teaser-ditail work2">
+					<a class="link-work-sp" href="work02.html">
+						<span class="text-link">More</span>
+						<span class="bg-link"></span>
+					</a>
 					<p class="type">Web site</p>
 					<br>
 					<h3 id="stretch2" class="title-work">
@@ -120,6 +128,10 @@
 					<div class="rec rectangle-03"></div>
 				</figure>
 				<div class="teaser-ditail work3">
+					<a class="link-work-sp" href="work03.html">
+						<span class="text-link">More</span>
+						<span class="bg-link"></span>
+					</a>
 					<p class="type">Web site</p>
 					<br>
 					<h3 id="stretch3" class="title-work">
@@ -328,6 +340,8 @@
 							line1 = $('.work1 .type'),
 							line2 = $('.work1 .title-work'), 
 							line3 = $('.work1 .explan-s'),
+							bgLink = $('.work1 .link-work-sp .bg-link'),
+							textLink = $('.work1 .link-work-sp .text-link'),
 							frame = $('.work1').parent(),
 							tl = new TimelineLite();
 
@@ -335,18 +349,14 @@
 							.to(rectangle1, .3, {x: '0%', skewX: 0, ease:Power4.easeOut})
 							.to(frontPage1, .6, {x: '0%', autoAlpha: 1}, '+=1')
 							.to(rectangle1, .3, {autoAlpha: 0, ease:Power4.easeOut}, '-=.7')
+							.to(bgLink, .6, {x: '0%', skewX: 0, ease: Power2.easeOut}, '-=.4')
+							.to(textLink, .4, {x: '0%', autoAlpha: 1, ease:Power2.easeOut}, '-=.4')
 							.add('line1')
 							.to(line1, .6, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, '-=.2')
 							.to(line2, .6, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1')
 							.to(line3, .6, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.2')
 							.to(frame, .4, {backgroundColor: '#ffffff', boxShadow: '4px 4px 20px 0px rgba(0, 0, 0, 0.05)', ease:Power2.easeOut});
 					})
-					// .addIndicators({
-					// 	name: 'contactTitle',
-					// 	colorTrigger: 'black',
-					// 	colorStart: '#75c695',
-					// 	colorEnd: 'pink'
-					// })
 					.addTo(controller);	
 
 
@@ -360,6 +370,8 @@
 							line1 = $('.work2 .type'),
 							line2 = $('.work2 .title-work'), 
 							line3 = $('.work2 .explan-s'),
+							bgLink = $('.work2 .link-work-sp .bg-link'),
+							textLink = $('.work2 .link-work-sp .text-link'),
 							frame = $('.work2').parent(),
 							tl = new TimelineLite();
 
@@ -367,6 +379,8 @@
 							.to(rectangle1, .3, {x: '0%', skewX: 0, ease:Power4.easeOut})
 							.to(frontPage1, .6, {x: '0%', autoAlpha: 1}, '+=1')
 							.to(rectangle1, .3, {autoAlpha: 0, ease:Power4.easeOut}, '-=.7')
+							.to(bgLink, .6, {x: '0%', skewX: 0, ease: Power2.easeOut}, '-=.4')
+							.to(textLink, .4, {x: '0%', autoAlpha: 1, ease:Power2.easeOut}, '-=.4')
 							.add('line1')
 							.to(line1, .6, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, '-=.2')
 							.to(line2, .6, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1')
@@ -391,6 +405,8 @@
 							line1 = $('.work3 .type'),
 							line2 = $('.work3 .title-work'), 
 							line3 = $('.work3 .explan-s'),
+							bgLink = $('.work3 .link-work-sp .bg-link'),
+							textLink = $('.work3 .link-work-sp .text-link'),
 							frame = $('.work3').parent(),
 							tl = new TimelineLite();
 
@@ -398,6 +414,8 @@
 							.to(rectangle1, .3, {x: '0%', skewX: 0, ease:Power4.easeOut})
 							.to(frontPage1, .6, {x: '0%', autoAlpha: 1}, '+=1')
 							.to(rectangle1, .3, {autoAlpha: 0, ease:Power4.easeOut}, '-=.7')
+							.to(bgLink, .6, {x: '0%', skewX: 0, ease: Power2.easeOut}, '-=.4')
+							.to(textLink, .4, {x: '0%', autoAlpha: 1, ease:Power2.easeOut}, '-=.4')
 							.add('line1')
 							.to(line1, .6, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, '-=.2')
 							.to(line2, .6, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1')

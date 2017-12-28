@@ -192,6 +192,7 @@
 			}
 
 			.teaser-ditail {
+				position: relative;
 				display: inline-block;
 				width: 30%;		
 
@@ -200,6 +201,10 @@
 				.explan-s {
 					opacity: 0;
 					@include prefix-transform(translateX(16px));
+				}
+
+				.link-work-sp {
+					display: none;
 				}
 
 				h3 {
@@ -413,7 +418,7 @@ footer {
 
 				.teaser-ditail {
 					width: 100%;
-					padding: 0 16px 16px;
+					padding: 0 16px 24px;
 					text-align: left;
 
 					.type,
@@ -425,6 +430,34 @@ footer {
 							display: none;
 						}
 					}
+
+					.link-work-sp {
+						display: block;
+						position: absolute;
+						top: -42px;
+						right: -8px;
+						padding: 8px 32px;
+						overflow: hidden;
+
+						.text-link {
+							opacity: 0;
+							display: inline-block;
+							@include prefix-transform(translateX(-20px));
+							color: #ffffff;
+							position: relative;
+							z-index: 2;							
+						}
+
+						.bg-link {
+							background-color: $yellow;
+							position: absolute;
+							top: 0;
+							left: 0;
+							height: 100%;
+							width: 100%;		
+							@include prefix-transform(translateX(-140%) skewX(40deg));
+						}
+					}					
 				}
 			}
 		}
