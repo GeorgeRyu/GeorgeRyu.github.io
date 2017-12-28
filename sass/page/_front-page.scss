@@ -442,7 +442,7 @@ footer {
 						.text-link {
 							opacity: 0;
 							display: inline-block;
-							@include prefix-transform(translateX(-20px));
+							@include prefix-transform(translateX(-32px));
 							color: #ffffff;
 							position: relative;
 							z-index: 2;							
