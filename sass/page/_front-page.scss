@@ -51,6 +51,7 @@
 		.my-job {
 
 			.prata {
+				overflow: hidden;
 
 				span {
 					@include prefix-transform(translateY(-34px));
