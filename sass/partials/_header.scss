@@ -134,13 +134,21 @@ header {
 	z-index: 150;
 	transition: all .6s ease-in;
 
+	#logo-rt {
+		@include prefix-transform(scale(1));
+		transition: all .6s ease-in;
+	}
+
 	&.first {
-	    transform: scale(4);
 	    top: 50%;
 	    left: 50%;
 	    position: fixed;
-	    top: calc(50% - 50px/2);
-	    left: calc(50% - 50px/2);
+	    top: calc(50% - 120px/2);
+	    left: calc(50% - 102px/2);
+
+		#logo-rt {
+			@include prefix-transform(scale(3));		
+		}
 	}
 
 	.piece {
@@ -235,13 +243,19 @@ header {
 		left: 16px;
 		transition: all .4s ease-in;
 
+		#logo-rt {
+			@include prefix-transform(scale(1));
+			transition: all .4s ease-in;
+		}
+
 		&.first {
-		    transform: scale(3);
-		    top: 50%;
-		    left: 50%;
 		    position: fixed;
-		    top: calc(50% - 50px/2);
-		    left: calc(50% - 50px/2);
+		    top: calc(50% - 120px/2);
+		    left: calc(50% - 102px/2);
+
+			#logo-rt {
+				@include prefix-transform(scale(3));
+			}		    
 		}		
 	}	
 }	
