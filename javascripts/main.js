@@ -88,7 +88,7 @@ $(function() {
 	var	bgBlack = $('.bg-black'),
 		titleWork = $('#title-work'),
 		job = $('.job'),
-		workPic = $('.workpic'),
+		workPic = $('.area-mainimg'),
 		link = $('.link'),
 		tl = new TimelineLite(),
 		clientWidth = window.innerWidth;
@@ -100,7 +100,7 @@ $(function() {
 			.from(titleWork, .4, {autoAlpha: 0, x: '-20%', ease:Power2.easeOut}, '-=.6')
 			.from(job, .4, {autoAlpha: 0, x: '-20%', ease:Power2.easeOut}, 'titleWork-=.5')
 			.to(link, .4, {opacity: 1, x: '20%', ease:Power4.easeIn}, '-=.4')
-			.from(workPic, .6, {top: '30%', autoAlpha: 0, ease:Power2.easeOut}, '-=.2');
+			.from(workPic, .6, {top: '-5%', autoAlpha: 0, ease:Power2.easeOut}, '-=.2');
 	} else {
 		tl
 			.from(bgBlack, 1, {x: '-90%', skewX: -40, ease:Power4.easeOut})

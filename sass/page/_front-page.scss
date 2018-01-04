@@ -3,6 +3,7 @@
 */
 
 .main-view {
+	position: relative;
     text-align: center;
     overflow: hidden;
     height: 100vh;
@@ -86,7 +87,7 @@
     	opacity: 0;
 		height: 100vh;
 		z-index: -1;
-		transform: translateY(0) scale(1);
+		@include prefix-transform(translateY(0) scale(1));
 
 		&:before {
 			content: "";
@@ -384,7 +385,7 @@ footer {
 		bottom: 0;
 		z-index: 1;
 		background-image: url('../images/bg_footer.jpg');
-		transform: translateY(-240px) scale(1.05);
+		transform: translateY(-30%) scale(1.05);
     }
 }
 
