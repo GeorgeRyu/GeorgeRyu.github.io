@@ -31,8 +31,9 @@
 			display: block;
 			bottom: 80px;
 			right: -16px;
-			color: $lightGray;
-			padding: 16px 24px;
+			color: $yellow;
+			letter-spacing: 4px;
+			padding: 16px 40px;
 			background-color: $black;
 			transform: translateX(0);
 			opacity: 0;
@@ -149,7 +150,11 @@
 
 	.sp-site {
 		width: 100vw;
-		margin-left: -5%;		
+		margin-left: -5%;	
+
+		&.app-img {
+			margin-top: 40px;
+		}	
 	}
 }
 
