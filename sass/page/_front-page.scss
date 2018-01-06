@@ -22,7 +22,7 @@
 
 		span {
 			display: inline-block;
-			color: $black;	
+			color: $bgWhite;	
 		}		
 
 		.greeting {
@@ -30,6 +30,7 @@
 			
 			p {
 				overflow: hidden;
+				letter-spacing: 2px;
 
 				span {
 					@include prefix-transform(translateY(34px));
@@ -44,7 +45,8 @@
 			position: relative;
 			width: 80px;
 			height: 2px;
-			background-color: $black;
+			/*background-color: $black;*/
+			background-color: $yellow;
 			margin: 16px auto;
 			z-index: 1;			
 		}
@@ -71,7 +73,8 @@
 			margin: auto;
 			width: 270px;
 			height: 270px;
-			background-color: rgba(222, 220, 0, 0.6);
+			/*background-color: rgba(222, 220, 0, 0.6);*/
+			background-color: rgba(0, 0, 0, 0.85);
 			z-index: 0;				
 		}	
 	}  	
@@ -91,7 +94,8 @@
 
 		&:before {
 			content: "";
-			display: block;
+			/*display: block;*/
+			display: none;
 			position: absolute;
 			bottom: 0;
 			right: 0;
@@ -112,6 +116,10 @@
 		right: 0;		
 		opacity: 0;
 		color: $midleGray;	
+
+		p{
+			color: $black;
+		}
 
 		.arrow {
 			opacity: 0.6;
@@ -328,7 +336,7 @@ footer {
 
     h2 {
 		padding-top: 64px;
-		color: $yellow; 
+		color: $black; 
 		opacity: 0;
 		transform: translateY(60px);
     }
@@ -345,7 +353,7 @@ footer {
 			display: inline-block;
 			height: 32px;			
 			width: 32px;
-			background-color: #343432;
+			background-color: $yellow;
 			border-radius: 50%;
 
 			img {

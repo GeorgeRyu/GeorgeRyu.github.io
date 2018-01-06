@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="20px" viewBox="0 0 34 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>scroll</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-633.000000, -679.000000)" fill="#DEDC00">
+            <g id="MAIN">
+                <path d="M663.993367,678.972774 L666.997789,681.977196 L650.002211,698.972774 L633.002211,681.972774 L636.006633,678.968352 L650.002211,692.96393 L663.993367,678.972774 Z" id="scroll" style="mix-blend-mode: lighten;"></path>
+            </g>
+        </g>
+    </g>
+</svg>
