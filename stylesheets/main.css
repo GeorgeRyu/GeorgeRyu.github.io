@@ -914,11 +914,19 @@ footer .background-img {
   }
   /* line 498, ../sass/page/_front-page.scss */
   #contact .prata {
-    padding: 64px 8px 0px;
+    padding: 40px 8px 0px;
   }
-  /* line 503, ../sass/page/_front-page.scss */
+  /* line 502, ../sass/page/_front-page.scss */
+  #contact .contact-links {
+    margin-top: 120px;
+  }
+  /* line 505, ../sass/page/_front-page.scss */
   #contact .contact-links a {
     background-color: #DEDC00;
+  }
+  /* line 510, ../sass/page/_front-page.scss */
+  #contact .copyright.prata {
+    margin-top: 56px;
   }
 }
 /* line 2, ../sass/page/_work.scss */
