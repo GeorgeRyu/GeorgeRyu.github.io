@@ -83,6 +83,13 @@ $(function() {
 	.setClassToggle('#title-work-3', 'fade-in-title-s')
 	.addTo(controller);
 
+	var stretchWork4 = new ScrollMagic.Scene({
+		triggerElement: '#title-work-4',
+		triggerHook:0.8
+	})
+	.setClassToggle('#title-work-4', 'fade-in-title-s')
+	.addTo(controller);	
+
 
 // OPENING ANIMATION OF WORK PAGE	
 	var	bgBlack = $('.bg-black'),
