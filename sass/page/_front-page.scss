@@ -72,7 +72,7 @@
 			margin: auto;
 			width: 270px;
 			height: 270px;
-			background-color: rgba(0, 0, 0, 0.75);
+			background-color: rgba(2, 17, 75, 0.85);
 			z-index: 0;				
 		}	
 	}  	
@@ -90,19 +90,6 @@
 		z-index: -1;
 		@include prefix-transform(translateY(0) scale(1));
 
-		&:before {
-			content: "";
-			/*display: block;*/
-			display: none;
-			position: absolute;
-			bottom: 0;
-			right: 0;
-			left: 0;
-			height: 30%;
-			width: 100%;
-			background: linear-gradient(rgba(23, 23, 23, 0), rgba(23, 23, 23, 0.8));
-			z-index: 1;			
-		}
 	}
 
 
@@ -149,6 +136,7 @@
 			figure {
 				position: relative;
 				width: 70%;
+				z-index: 0;
 
 				a {
 					position: relative;
@@ -156,10 +144,26 @@
 					width: 100%;
 					height: 0rem;
 					overflow: hidden;
-					transition: all 1s ease;
+					transition: all .6s ease;
+
+					.darkblue {
+						display: block;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						left: 0;
+						background: rgba(2, 17, 75, 0.6);
+						z-index: 1;						
+						transition: all .6s ease;
+					}
 
 					&:hover > img {
-						filter: grayscale(0) brightness(100%);
+						filter: grayscale(0);
+					}
+
+					&:hover > .darkblue {
+						opacity: 0;
 					}
 
 					&:hover + .rec {
@@ -176,7 +180,7 @@
 						opacity: 1;
 						top: 0;
 						width: 100%;
-						filter: grayscale(100%) brightness(60%);
+						filter: grayscale(100%);
 						transition: filter 1s ease;
 					}					
 				}
@@ -422,6 +426,10 @@ footer {
 
 					a {
 					    height: 240px;
+
+						.darkblue {
+							display: none;
+						}
 
 					    img {
 					    	opacity: 0;
