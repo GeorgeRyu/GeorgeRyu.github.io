@@ -170,16 +170,16 @@
 			Let’s talk about your new project
 		</h2>
 		<div class="contact-links">
-			<a href="mailto:r.takahasii@gmail.com">
+			<a class="nonmover" href="mailto:r.takahasii@gmail.com">
 				<img src="images/mail.svg" alt="icon-mail-image">
 			</a>
-			<a href="https://www.facebook.com/ryu.takahashi.31" target="_blank">
+			<a class="nonmover" href="https://www.facebook.com/ryu.takahashi.31" target="_blank">
 				<img src="images/facebook.svg" alt="icon-facebook-image">
 			</a>
-			<a href="https://www.linkedin.com/in/ryu-takahashi-2b4149133/" target="_blank">
+			<a class="nonmover" href="https://www.linkedin.com/in/ryu-takahashi-2b4149133/" target="_blank">
 				<img src="images/linkdin.svg" alt="icon-linkdin-image">
 			</a>
-			<a href="https://github.com/GeorgeRyu" target="_blank">
+			<a class="nonmover" href="https://github.com/GeorgeRyu" target="_blank">
 				<img src="images/github.svg" alt="icon-github-image">
 			</a>
 		</div>
@@ -199,6 +199,8 @@
 	<script src="./javascripts/ScrollMagic.min.js"></script>
 	<script src="./javascripts/animation.gsap.min.js"></script>
 	<script src="./javascripts/debug.addIndicators.min.js"></script>
+
+	<script src="./javascripts/jquery.fademover.js"></script>
 
 	<script src="./javascripts/main.js"></script>
 
@@ -643,6 +645,21 @@
 				// 	colorEnd: 'pink'
 				// })
 				.addTo(controller);	
+
+				var paragraph1 = new ScrollMagic.Scene({
+					triggerElement: '.teaser-ditail',
+					duration: '120%',
+					triggerHook:0.9
+				})
+				.setTween('.work01', {y: '-50px'})
+				// .addIndicators({
+				// 	name: 'duration1',
+				// 	colorTrigger: 'black',
+				// 	colorStart: '#75c695',
+				// 	colorEnd: 'pink'
+				// })
+				.addTo(controller);	
+			
 
 			}
 

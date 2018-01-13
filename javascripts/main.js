@@ -117,3 +117,9 @@ $(function() {
 			.to(link, .4, {opacity: 1, ease:Power1.easeOut}, '-=.4')
 			.from(workPic, 1, {autoAlpha: 0, ease:Circ}, 'titleWork');				
 	}
+
+
+// FADEMOVE	
+$(function(){
+    $('body').fadeMover();
+});
