@@ -1,7 +1,4 @@
 
-/*@include parallax-init;
-*/
-
 .main-view {
 	position: relative;
     text-align: center;
@@ -10,113 +7,170 @@
     width: 100%;	
 
 	.senter-object {
-		opacity: 0;
-		position: relative;
-		margin-top: 32vh;
+		position: fixed;
+		width: auto;
+		top: 35vh;
+	    left: calc(50% - 604px/2);
+		text-align: left;
+		opacity: 1;
+		transition: all .6s ease;	    	
 
-		.greeting,
-		.my-job {
-			position: relative;
-			z-index: 1;			
-		}
-
-		span {
-			display: inline-block;
-			color: $bgWhite;	
-		}		
-
-		.greeting {
-		    padding-top: 36px;
-			
-			p {
-				overflow: hidden;
-				letter-spacing: 2px;
-
-				span {
-					@include prefix-transform(translateY(34px));
-				    line-height: 4rem;
-				    font-size: 3rem;
-					font-weight: 700;				
-				}
-			}
-		}
-
-		.line-main {
-			position: relative;
-			width: 80px;
-			height: 2px;
-			background-color: $yellow;
-			margin: 16px auto;
-			z-index: 1;			
-		}
-
-		.my-job {
-
-			.prata {
-				overflow: hidden;
-
-				span {
-					@include prefix-transform(translateY(-34px));
-					font-size: 2.4rem;
-					line-height: 3.4rem;					
-				}
-			}
-		}
-
-		.square {
+		.greetig-1 {
 			position: absolute;
-			transform: rotate(-45deg);
-			top: 0;
-			left: 0;
-			right: 0;
-			margin: auto;
-			width: 270px;
-			height: 270px;
-			background-color: rgba(2, 17, 75, 0.85);
-			z-index: 0;				
-		}	
-	}  	
+			left: 210px;
+			font-size: 12rem;
+			text-align: right;
+			color: #DFE1EA;
+			opacity: 0;	
+			@include prefix-transform(translateX(-60px) translateY(20px));
+		}
 
-    .main-image {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		z-index: 1;
-		background-image: url('../images/bg_main.jpg');
-    	opacity: 0;
-		height: 100vh;
-		z-index: -1;
-		@include prefix-transform(translateY(0) scale(1));
+		.main-text {
+			position: relative;
+			text-align: left;
+			z-index: 2;
 
+			.my-name {
+
+				.first-name,
+				.last-name {
+					font-size: 12rem;
+					line-height: 10rem;
+					letter-spacing: -1.7rem;
+					font-weight: 900;
+					color: $yellow;
+
+					.ryu,
+					.taka {
+						display: inline-flex;
+						width: 9rem;
+						overflow: hidden;
+
+						.ch {
+							@include prefix-transform(translateX(-90px));
+						}
+					}										
+				}
+
+				.first-name {
+					@include prefix-transform(translateX(-6px));
+
+						.ryu {
+
+						&:nth-child(2) {
+							@include prefix-transform(translateX(-30px))
+						}
+						&:nth-child(3) {
+							@include prefix-transform(translateX(-52px))
+						}
+					}
+				}
+
+
+				.last-name > .taka {
+					&:nth-child(2) {
+						@include prefix-transform(translateX(-40px))
+					}
+					&:nth-child(3) {
+						@include prefix-transform(translateX(-58px))
+					}
+					&:nth-child(4) {
+						@include prefix-transform(translateX(-78px))
+					}
+					&:nth-child(5) {
+						@include prefix-transform(translateX(-96px))
+					}
+					&:nth-child(6) {
+						@include prefix-transform(translateX(-112px))
+					}
+					&:nth-child(7) {
+						@include prefix-transform(translateX(-132px))
+					}
+					&:nth-child(8) {
+						@include prefix-transform(translateX(-173px))
+					}
+					&:nth-child(9) {
+						@include prefix-transform(translateX(-186px))
+					}
+				}
+			}
+
+			.my-job {
+				position: relative;
+				display: inline-block;
+				overflow: hidden;
+				font-size: 2.4rem;
+				color: $yellow;
+
+				.rectangle-job {
+					position: absolute;
+					display: block;
+					height: 100%;
+					width: 0%;
+					top: 0;
+					left: 0;
+					right: auto;
+					background-color: $yellow;
+				}
+
+				.text-job {
+					display: block;
+					opacity: 0;
+					/*@include prefix-transform(translateY(-30px));*/
+				}
+			}
+		}
 	}
 
-
 	.scroll {
-		position: absolute;
-		margin: 0 auto;
-		bottom: 1%;
-		left: 0;
-		right: 0;		
-		opacity: 0;
-		color: $midleGray;	
+		position: fixed;
+		display: block;
+		height: 80px;
+		bottom: 0;	
+	    left: calc(50% - 54px/2);
+	    opacity: 0;
+		transition: all .6s ease;	    
 
-		p{
-			color: $black;
+		p {
+			margin-top: 24px;
+			font-size: 1rem;
+			color: $yellow;
+			transition: all .6s ease;	    
 		}
 
-		.arrow {
-			opacity: 0.6;
-		 	animation: vertical 1s ease-in-out infinite alternate;
-		}
+		.line-scroll {
+			position: absolute;
+			display: inline-block;
+			width: 2px;
+			height: 100%;
+			top: 0;
+			overflow: hidden;
 
-		@keyframes vertical {
-		    0% {opacity: 1;}
-		  100% {opacity: .4;}
+			&:before {
+			    content: "";
+			    display: block;
+			    position: absolute;
+			    width: 100%;
+			    height: 100%;
+			    top: 0px;
+			    left: 0px;
+			    background-color: $yellow;
+			    animation: rotation 2s cubic-bezier(0.66, 0.01, 0.29, 1.01) 0s infinite normal running;				
+			}
+
+			@keyframes rotation {
+				0% {
+					@include prefix-transform(translateY(-80px))				
+				}
+				100% {
+					@include prefix-transform(translateY(80px))									
+				}
+			}
 		}
 	}
 }
+
+
 
 
 .work-area {
@@ -125,13 +179,13 @@
 	overflow: hidden;
 
     .inner {
-		width: 90%;
+		width: 88%;
 		margin: 0 auto;
 
 		.teaser {
 			display: block;
 			width: 100%;
-			margin-bottom: 600px;
+			margin-bottom: 60%;
 
 			figure {
 				position: relative;
@@ -187,7 +241,6 @@
 
 				.rec {
 					opacity: 1;
-					/*filter: blur(0px);*/
 					transition: all 1s ease;
 				}
 
@@ -323,90 +376,205 @@
 
 footer {
 	position: relative;
-    height: 468px;
+    height: auto;
     width: 100%;
+    padding: 80px 0;
     text-align: center;
-    overflow: hidden;
-    background-color: $black;
 
-	h2,
-	.contact-links,
-	.copyright {
-		position: relative;
-		z-index: 5
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 60%;
+		height: 1px;
+		top: 0px;
+		left: 20%;
+		background-color: $lightGray;		
 	}
 
-    h2 {
-		padding-top: 64px;
-		color: $black; 
-		opacity: 0;
-		transform: translateY(60px);
+    .logo-bottom {
+    	position: relative;
+		width: 80px;
+		margin: 0 auto 24px;
+		opacity: .3;
+		overflow: hidden;
+
+    	svg {
+    		@include prefix-transform(translateY(80px));
+    		width: 80px;
+    		height: 80px;
+
+    		#logo-2 {
+    			fill: #dadada;
+    		}
+    	}
+
+		.wrap-gauge {
+			position: absolute;
+			top: 30%;
+			left: 0;
+			display: inline-block;
+			width: 60%;
+			height: 70%;
+			z-index: 2;
+    		@include prefix-transform(translateY(100%));
+
+			#gauge-2 {
+				display: block;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: $lightGray;
+				/*transition: all .2s ease-in;*/
+			}		
+		}    	
     }
 
     .contact-links {
-		display: flex;
-		justify-content: space-between;
-		width: 360px;
-		margin: 160px auto 0; 
-		transform: translateY(24px);
-		opacity: 0;		
+    	margin-bottom: 40px;
 
-		a {
-			display: inline-block;
-			height: 32px;			
-			width: 32px;
-			background-color: $yellow;
-			border-radius: 50%;
+    	ul {
+		    display: flex;
+		    justify-content: space-between;
+		    width: 400px;
+		    padding: 0 10px;
+		    margin: 0 auto;
+		    overflow: hidden;
 
-			img {
-				margin-top: 8px;
-			}
-
-			&:nth-child(1) {
-
-				img {
-					margin-top: 10px;
+    		li {
+    		@include prefix-transform(translateY(16px));
+				
+				a {
+					position: relative;
+					display: inline-block;					
+					@extend %hoverLine;					
 				}
-			}
-
-			&:nth-child(4) {
-
-				img {
-					margin-top: 0;
-				}
-			}
-
-			&:hover {
-				background-color: $yellow;
-				box-shadow: 0 0 40px 0px rgba(222, 220, 0, .6);
-			}
-		}   	
+    		}
+    	}
     }
 
     .copyright {
-    	margin-top: 160px;
-    }
-
-    .background-img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		z-index: 1;
-		background-image: url('../images/bg_footer.jpg');
-		transform: translateY(-30%) scale(1.05);
+    	font-size: 1rem;
     }
 }
 
 
 
+@include middle {
+	.main-view {
+		#senter-object {
+
+			.greetig-1 {
+			    left: 196px;				
+			}
+
+			.main-text {
+				.my-name {
+					.first-name,
+					.last-name {
+						font-size: 11rem;
+						line-height: 9rem;
+						letter-spacing: -4rem;						
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
 @include phone {
 
-	.senter-object {
-		transform: scale(.9);
-		-webkit-transform: scale(.9);
+	.main-view {
+
+		.senter-object {
+			top: 45vh;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			padding-left: 6%;
+
+			.greetig-1 {
+				left: -2%;
+				right: -2%;
+				top: -22%;
+				font-size: 33vw;
+				color: #efefef;					
+			}
+
+			.main-text {
+				.my-name {
+
+					.first-name,
+					.last-name {
+
+						font-size: 14vw;
+						line-height: 12vw;
+						letter-spacing: -8vw;					
+
+						.ryu,
+						.taka {
+							width: 16%;
+						}
+					} 
+
+					.first-name {
+						@include prefix-transform(translateX(-2px));
+
+						.ryu {
+
+							&:nth-child(2) {
+								@include prefix-transform(translateX(-24px))
+							}
+							&:nth-child(3) {
+								@include prefix-transform(translateX(-45px))
+							}
+						}
+					}
+
+					.last-name > .taka {
+						&:nth-child(2) {
+							@include prefix-transform(translateX(-28px))
+						}
+						&:nth-child(3) {
+							@include prefix-transform(translateX(-47px))
+						}
+						&:nth-child(4) {
+							@include prefix-transform(translateX(-68px))
+						}
+						&:nth-child(5) {
+							@include prefix-transform(translateX(-88px))
+						}
+						&:nth-child(6) {
+							@include prefix-transform(translateX(-107px))
+						}
+						&:nth-child(7) {
+							@include prefix-transform(translateX(-126px))
+						}
+						&:nth-child(8) {
+							@include prefix-transform(translateX(-154px))
+						}
+						&:nth-child(9) {
+							@include prefix-transform(translateX(-171px))
+						}
+					}
+				}
+
+				.my-job {
+					font-size: 5vw;	
+					line-height: 6vw;					
+				}
+			}
+		}
+
+		#scroll {
+			position: absolute;
+		}
 	}
+
 
 
 	#work {
@@ -499,23 +667,13 @@ footer {
 	}
 
 	#contact {
-		height: auto;
-
-		.prata {
-			padding: 40px 8px 0px;
-		}
-
 		.contact-links {
-			margin-top: 120px;
-
-			a {
-				background-color: $yellow;
+			ul {
+				width: 90%;
+				font-size: 3.5vw;
 			}
 		}
 
-		.copyright.prata {
-			margin-top: 56px;
-		}
 	}
 }
 

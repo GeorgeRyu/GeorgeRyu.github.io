@@ -6,9 +6,9 @@ html {
 
 body {
 	width: 100%;
-/*	font-family: "inherit", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;*/
-	font-family: 'PT Sans', sans-serif, Arial, Meiryo, "Hiragino Kaku Gothic ProN", sans-serif;
+	font-family: 'Lato', sans-serif, Arial, Meiryo, "Hiragino Kaku Gothic ProN", sans-serif;
 	font-size: 1.4rem;
+	font-weight: 300;
 	background-color: $bgWhite;
 	line-height: 2rem;
 	margin: 0;
@@ -76,13 +76,14 @@ figure {
 	padding: 0;
 }
 
+.add-blur {
+	filter: blur(10px);
+	transition: all .6s ease;	    	
+}
 
 
-
-
-
-.prata {
-	font-family: 'Prata', serif;	
+.yester {
+	font-family: 'Yesteryear', cursive;
 }
 
 .width {
