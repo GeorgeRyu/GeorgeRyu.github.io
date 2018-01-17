@@ -1211,7 +1211,7 @@ footer .copyright {
 /* line 161, ../sass/page/_work.scss */
 #work-page .website .sp-site {
   width: 100vw;
-  margin-left: -5%;
+  margin: 0px -8.5%;
 }
 /* line 165, ../sass/page/_work.scss */
 #work-page .website .sp-site.app-img {
