@@ -3,45 +3,6 @@
 // LOADING ANIMATION
 
 
-
-
-
-
-
-// FUNCTION OF MENU BTN
-// $('.btn-menu').click(function() {
-// 	var clientWidth = window.innerWidth;
-
-// 	if(clientWidth > 768) {
-// 		if($('.btn-menu').hasClass('active')) {
-// 			$('.btn-menu').removeClass('active');
-// 			$('.menu-content').removeClass('open-menu');		 
-// 		} else {
-// 			$('.btn-menu').addClass('active');
-// 			$('.menu-content').addClass('open-menu');		 
-// 		}		
-// 	} else {
-// 		if($('.btn-menu').hasClass('active')) {
-// 			$('.btn-menu').removeClass('active');
-// 			$('.menu-content').removeClass('open-menu-sp');		 
-// 		} else {
-// 			$('.btn-menu').addClass('active');
-// 			$('.menu-content').addClass('open-menu-sp');			
-// 		}
-// 	}
-// });
-
-// $('#shortcut-contact').click(function() {
-// 	var clientWidth = window.innerWidth;
-
-// 	if(clientWidth < 768) {
-// 		$('.btn-menu').removeClass('active');
-// 		$('.menu-content').removeClass('open-menu-sp');		 
-// 	}
-// });
-
-
-
 //  scroll animation in the page
 $(function() {
   // スクロールのオフセット値
@@ -67,12 +28,22 @@ $(function() {
 
 
 
-
-
-
-
 // SCROLL MAGIC
 	var controller = new ScrollMagic.Controller();
+
+
+// LOGO ANIMATION EXCEPT FRONT PAGE
+$(window).on('load',function(){
+  var url = location.href
+  if (!(url == "file:///Users/ryutakahashi/Documents/Portfolio/mysite/GeorgeRyu.github.io/index.html")){
+
+    var gauge = $('#gauge');
+		tl = new TimelineLite({paused: false}),
+
+	tl
+		.to(gauge, .6, {height: 0, ease:Power2.easeOut}, '+=.6');
+  }
+});
 
 
 // FOOTER ANIMATION 

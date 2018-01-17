@@ -2,7 +2,7 @@
 header {
 	position: fixed;
 	height: 80px;
-	width: 100vw;
+	width: 100%;
 	z-index: 100;
 
 	.menu-content {
@@ -51,7 +51,7 @@ header {
 	.wrap-gauge {
 		position: absolute;
 		top: 30%;
-		display: inline-block;
+		display: block;
 		width: 60%;
 		height: 70%;
 		z-index: 2;
@@ -119,6 +119,7 @@ header {
 @include phone {
 
 	header {
+		width: 100vw;
 		@include prefix-transform(translate3d(0, 0, 0));
 
 		.menu-content{
