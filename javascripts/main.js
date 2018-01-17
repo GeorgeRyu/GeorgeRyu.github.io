@@ -1,35 +1,44 @@
 
+
+// LOADING ANIMATION
+
+
+
+
+
+
+
 // FUNCTION OF MENU BTN
-$('.btn-menu').click(function() {
-	var clientWidth = window.innerWidth;
+// $('.btn-menu').click(function() {
+// 	var clientWidth = window.innerWidth;
 
-	if(clientWidth > 768) {
-		if($('.btn-menu').hasClass('active')) {
-			$('.btn-menu').removeClass('active');
-			$('.menu-content').removeClass('open-menu');		 
-		} else {
-			$('.btn-menu').addClass('active');
-			$('.menu-content').addClass('open-menu');		 
-		}		
-	} else {
-		if($('.btn-menu').hasClass('active')) {
-			$('.btn-menu').removeClass('active');
-			$('.menu-content').removeClass('open-menu-sp');		 
-		} else {
-			$('.btn-menu').addClass('active');
-			$('.menu-content').addClass('open-menu-sp');			
-		}
-	}
-});
+// 	if(clientWidth > 768) {
+// 		if($('.btn-menu').hasClass('active')) {
+// 			$('.btn-menu').removeClass('active');
+// 			$('.menu-content').removeClass('open-menu');		 
+// 		} else {
+// 			$('.btn-menu').addClass('active');
+// 			$('.menu-content').addClass('open-menu');		 
+// 		}		
+// 	} else {
+// 		if($('.btn-menu').hasClass('active')) {
+// 			$('.btn-menu').removeClass('active');
+// 			$('.menu-content').removeClass('open-menu-sp');		 
+// 		} else {
+// 			$('.btn-menu').addClass('active');
+// 			$('.menu-content').addClass('open-menu-sp');			
+// 		}
+// 	}
+// });
 
-$('#shortcut-contact').click(function() {
-	var clientWidth = window.innerWidth;
+// $('#shortcut-contact').click(function() {
+// 	var clientWidth = window.innerWidth;
 
-	if(clientWidth < 768) {
-		$('.btn-menu').removeClass('active');
-		$('.menu-content').removeClass('open-menu-sp');		 
-	}
-});
+// 	if(clientWidth < 768) {
+// 		$('.btn-menu').removeClass('active');
+// 		$('.menu-content').removeClass('open-menu-sp');		 
+// 	}
+// });
 
 
 
@@ -58,8 +67,43 @@ $(function() {
 
 
 
+
+
+
+
 // SCROLL MAGIC
 	var controller = new ScrollMagic.Controller();
+
+
+// FOOTER ANIMATION 
+	var footerContent = new ScrollMagic.Scene({
+		triggerElement: 'footer',
+		triggerHook: 0.8
+	}).on('start', function () {
+
+		var logoSvg = $('.logo-bottom svg'),
+			wrapGauge = $('.wrap-gauge'), 
+			logoGauge = $('#gauge-2'), 
+			li = $('.contact-links li'),
+			tl = new TimelineLite();
+
+		tl
+			.add('logoSvg')
+			.to(logoSvg, .4, {y: 0, ease:Power2.easeIn})
+			.to(wrapGauge, .4, {y: 0, ease:Power2.easeIn}, 'logoSvg')
+			.to(logoGauge, .6, {height: 0, ease:Power3.easeIn})
+			.staggerTo(li, .2, {y: 0, ease: Power2.easeOut}, 0.1);
+	})
+	// .addIndicators({
+	// 	name: 'contactTitle',
+	// 	colorTrigger: 'black',
+	// 	colorStart: '#75c695',
+	// 	colorEnd: 'pink'
+	// })
+			.addTo(controller);	
+
+
+
 
 // STRETCH TITLE UNDER BORDER IN WORK PAGE
 	var stretchWork1 = new ScrollMagic.Scene({

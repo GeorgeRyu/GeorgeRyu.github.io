@@ -26,40 +26,16 @@ $bgWhite: #FAFAFA;
 }
 
 
-/* -----------------------------
-	set animation of menu contents
------------------------------ */
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    margin-left: -24px;
-  }
-  100% {
-    opacity: 1;
-    margin-left: 24px;
-  }
-}
-
-@keyframes fadeOutRight {
-  0% {
-    opacity: 0;
-    margin-left: 24px;
-  }
-  100% {
-    opacity: 1;
-    margin-left: -24px;
-  }
-}
-
-
 
 
 %hoverLine {
 	
-	&:after {
+	&:before {
 		content: "";
+		position: absolute;
 		display: block;
+		top: 5px;
+		left: -10%;
 		width: 0%;
 		height: 2px;
 	    margin: 4px auto 0;
@@ -67,8 +43,8 @@ $bgWhite: #FAFAFA;
 		transition: width .3s ease;
 	}					
 
-	&:hover::after {
-		width: 100%;
+	&:hover::before {
+		width: 120%;
 	}
 }
 
@@ -77,6 +53,12 @@ $bgWhite: #FAFAFA;
 
 @mixin phone {
 	@media only screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin middle {
+	@media only screen and (min-width:769px) and (max-width:1140px) {
 		@content;
 	}
 }

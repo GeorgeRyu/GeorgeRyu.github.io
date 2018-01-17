@@ -6,83 +6,68 @@
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
 
 	<title>GeorgeRyu</title>
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,900|Yesteryear" rel="stylesheet">
 	<link rel="stylesheet" href="./stylesheets/main.css">
 </head>
 
 <body>
 	<header>
-		<div class="btn-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
 		<nav class="menu-content">
 			<ul class="wrap-links">
-				<li><a href="work01.html">WORK</a></li>
 				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="#contact">CONTACT</a></li>
-			</ul>
-			<ul class="wrap-links-sp">
 				<li><a href="work01.html">WORK</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a id="shortcut-contact" href="#contact">CONTACT</a></li>
 			</ul>			
 		</nav>
 	</header>
 
-	<a class="logo first" href="index.html">
+	<a id="logo" class="logo" href="index.html">
 		<?xml version="1.0" encoding="UTF-8"?>
-		<svg width="102px" height="120px" viewBox="0 0 102 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-		    <title>logo</title>
-		    <desc>Created with Sketch.</desc>
-		    <defs></defs>
-		    <g id="logo-rt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-		        <g id="Desktop" transform="translate(-40.000000, -20.000000)" fill="#DEDC00">
-		            <g id="MAIN">
-		                <g id="header-h80px">
-		                    <g id="logo" transform="translate(40.000000, 20.000000)">
-		                        <polygon class="piece" id="Fill-1" points="0 22.3076923 0 39.2307692 8.46153846 39.2307692 3.30861423 22.3076923"></polygon>
-		                        <path class="piece" d="M6.96696268,15.843452 C7.26152475,15.3321651 7.46460168,14.7019819 7.57518812,13.9529026 C7.68577456,13.2044874 7.74106778,12.3363458 7.74106778,11.3499722 C7.74106778,10.3635985 7.68577456,9.49612112 7.57518812,8.74704176 C7.46460168,7.99862662 7.24342879,7.34967912 6.91166946,6.80169377 C6.21095354,5.77928596 4.88391622,5.2673348 2.9305575,5.2673348 L1.67555218e-05,5.2673348 L1.67555218e-05,17.4326095 L3.20702361,17.4326095 C4.2023016,17.4326095 4.99467022,17.2956132 5.58463214,17.0216205 C6.17392384,16.7476278 6.63520335,16.3554032 6.96696268,15.843452" id="Fill-2"></path>
-		                        <path class="piece" d="M14.997834,0.00664224664 L15.0412308,0.00664224664 C15.0407281,0.00448351648 15.0402254,0.00232478632 15.0397228,0 L0.0837440975,0 L0.0837440975,0.00664224664 L3.42814623,0.00664224664 C10.0633328,0.00664224664 13.3810937,3.82460562 13.3810937,11.459536 C13.3810937,13.7610745 13.0215202,15.7158877 12.3027083,17.3229792 C11.5838964,18.9310672 10.3208652,20.2274676 8.51529018,21.2136752 L14.597377,39.023199 L21.5224341,39.023199 L21.5224341,5.26730159 L14.997834,5.26730159 L14.997834,0.00664224664 Z" id="Fill-4"></path>
-		                        <polygon class="piece" id="Fill-6" points="33.6869429 5.2673348 27.1625103 5.2673348 27.1625103 39.0232322 33.7623427 39.0232322"></polygon>
-		                    </g>
-		                </g>
-		            </g>
-		        </g>
-		    </g>
-		</svg>
+			<svg width="120px" height="120px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+				<defs><style>.cls-1{fill:#dedc00;}</style></defs>
+				<title>logo</title>
+				<g id="logo-rt" id="Layer_2" data-name="Layer 2">
+					<g id="Layer_1-2" data-name="Layer 1">
+						<path id="logo" class="cls-1" d="M120,43.76C120,0,60,0,60,0H0V120H45.05V47H24.94V41.16H70.35V47H50.24v73H120L84,84C100.68,79.32,120,68.58,120,43.76Z"/>
+					</g>
+				</g>
+			</svg>
+			<div class="wrap-gauge"><span id="gauge"></span></div>
 	</a>	
-	<div class="bg-white"></div>
-
+	
 	<section class="main-view">
-		<div class="senter-object">
-			<div class="greeting">
-				<p class="greetig-1">
-					<span>Hi, I'm</span>
-				</p>
-				<p class="greetig-2">
-					<span>Ryu Takahashi</span>
+		<div id="senter-object" class="senter-object">
+			<p class="greetig-1 yester">
+				Hi there!
+			</p>
+			<div class="main-text">
+				<div class="my-name">
+					<p class="first-name">
+						<span class="ryu"><span class="ch">R</span></span>
+						<span class="ryu"><span class="ch">Y</span></span>
+						<span class="ryu"><span class="ch">U</span></span>
+					</p>
+					<p class="last-name">
+						<span class="taka"><span class="ch">T</span></span>
+						<span class="taka"><span class="ch">A</span></span>
+						<span class="taka"><span class="ch">K</span></span>
+						<span class="taka"><span class="ch">A</span></span>
+						<span class="taka"><span class="ch">H</span></span>
+						<span class="taka"><span class="ch">A</span></span>
+						<span class="taka"><span class="ch">S</span></span>
+						<span class="taka"><span class="ch">H</span></span>
+						<span class="taka"><span class="ch">I</span></span>
+					</p>
+				</div>				
+				<p class="my-job" >
+					<span class="rectangle-job"></span>
+					<span class="text-job">Designer / Front-end Developer</span>
 				</p>
 			</div>
-			<div class="line-main"></div>
-			<div class="my-job">
-				<p class="my-job-1 prata" >
-					<span>Front-end Developer,</span>
-				</p>
-				<p class="my-job-2 prata">
-					<span>UI Designer</span>
-				</p>
-			</div>
-			<div class="square"></div>
 		</div>
-		<a href="#work" class="scroll">
-			<p>My work</p>
-			<img class="arrow" src="./images/scroll.svg" alt="scroll-image">
-		</a>
-		<div class="main-image cover">
+		<div id="scroll" class="scroll">
+			<p>MY WORK</p>
+			<div class="line-scroll">
+			</div>
 		</div>
 	</section>
 
@@ -166,27 +151,28 @@
 	</section>
 
 	<footer id="contact">
-		<h2 class="prata">
-			Let’s talk about your new project
-		</h2>
+
+		<div class="logo-bottom">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+				<title>logo</title>
+				<g id="logo-rt" id="Layer_3" data-name="Layer 2">
+					<g id="Layer_1-3" data-name="Layer 1">
+						<path id="logo-2" class="cls-2" d="M120,43.76C120,0,60,0,60,0H0V120H45.05V47H24.94V41.16H70.35V47H50.24v73H120L84,84C100.68,79.32,120,68.58,120,43.76Z"/>
+					</g>
+				</g>
+			</svg>
+			<div class="wrap-gauge"><span id="gauge-2"></span></div>			
+		</div>
 		<div class="contact-links">
-			<a class="nonmover" href="mailto:r.takahasii@gmail.com">
-				<img src="images/mail.svg" alt="icon-mail-image">
-			</a>
-			<a class="nonmover" href="https://www.facebook.com/ryu.takahashi.31" target="_blank">
-				<img src="images/facebook.svg" alt="icon-facebook-image">
-			</a>
-			<a class="nonmover" href="https://www.linkedin.com/in/ryu-takahashi-2b4149133/" target="_blank">
-				<img src="images/linkdin.svg" alt="icon-linkdin-image">
-			</a>
-			<a class="nonmover" href="https://github.com/GeorgeRyu" target="_blank">
-				<img src="images/github.svg" alt="icon-github-image">
-			</a>
+			<ul>
+				<li><a class="nonmover" href="mailto:r.takahasii@gmail.com">EMAIL</a></li>
+				<li><a class="nonmover" href="https://www.facebook.com/ryu.takahashi.31" target="_blank">LINKDIN</a></li>
+				<li><a class="nonmover" href="https://www.linkedin.com/in/ryu-takahashi-2b4149133/" target="_blank">FACEBOOK</a></li>
+				<li><a class="nonmover" href="https://github.com/GeorgeRyu" target="_blank">GITHUB</a></li>
+			</ul>
 		</div>
 
-		<p class="copyright prata">© 2017. the work of Ryu takahashi</p>
-		<div class="background-img cover">
-		</div>
+		<p class="copyright">© 2017. the work of Ryu takahashi</p>
 	</footer>
 
 
@@ -199,6 +185,7 @@
 	<script src="./javascripts/ScrollMagic.min.js"></script>
 	<script src="./javascripts/animation.gsap.min.js"></script>
 	<script src="./javascripts/debug.addIndicators.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 
 	<script src="./javascripts/jquery.fademover.js"></script>
 
@@ -209,98 +196,30 @@
 		var controller = new ScrollMagic.Controller();
 
 		// OPNING ANIMATION
-		(function($) {
-
-			var	bgWhite = $('.bg-white'),
-				mainImg = $('.main-image'),
-				senterObject = $('.senter-object'),
-				square = $('.square'),
-				lineMain = $('.line-main'),
-				greeting1 = $('.greeting .greetig-1 span'),
-				greeting2 = $('.greeting .greetig-2 span'),
-				job1 = $('.my-job .my-job-1 span'),
-				job2 = $('.my-job .my-job-2 span'),
-				scroll = $('.scroll'),
-				arrow = $('.arrow'),
-				btnMenu = $('.btn-menu')
-				tl = new TimelineLite({paused: true}),
-				piece = $('.piece'),
-				loader = $('.logo'),
-				tlLoader = new TimelineMax({repeat: 1, onComplete: loadContent});
+	        var nav = $('.menu-content'),
+	        	hi = $('.greetig-1'),
+	        	ch = $('.ch'),
+	        	rac = $('.rectangle-job'),
+	        	job = $('.text-job'),
+	        	scroll = $('.scroll'),
+	        	gauge = $('#gauge');
+				tl = new TimelineLite({paused: false}),
 
 			tl
-				.to(bgWhite, .6, {opacity: 0, display: 'none'})
-				.add('senterObject')
-				.to(senterObject, 1, {opacity: 1,  ease:Power4.easeOut})
-				.from(square, 1, {autoAlpha: 0, width: 0, rotation: 90, ease:Power4.easeOut}, 'senterObject')
-				.from(lineMain, .5, {width: 0, ease: Power2.easeOut}, '-=.2')
-				.add('greeting2')
-				.to(greeting2, .4, {y: 0, color: '#DEDC00', ease:Power2.easeOut}, 'greeting2')
-				.to(job1, .4, {y: 0, color: '#DEDC00', ease:Power2.easeOut}, 'greeting2')
-				.add('greeting1')
-				.to(greeting1, .4, {y: 0, color: '#DEDC00', ease:Power2.easeOut}, 'greeting1-=.3')
-				.to(job2, .4, {y: 0, color: '#DEDC00', ease:Power2.easeOut}, 'greeting1-=.3')
-				.add('mainImg')
-				.fromTo(mainImg, 1.5, {scale: 1.1, autoAlpha: 0, ease:Power4.easeOut}, {scale: 1, autoAlpha: 1, ease:Power4.easeOut})
-				.add('scroll')
-				.to(scroll, .8, {autoAlpha: 1, ease:Power4.easeOut})
-				.from(arrow, .8, {y: -100, ease:Power2.easeOut}, 'scroll')
-				.from(btnMenu, .8, {x: 40, autoAlpha: 0, ease:Power2.easeOut}, 'scroll');
+				.to(gauge, .6, {height: 0, ease:Power2.easeOut}, '+=.6')
+				.to(hi, 0.8, {y: 0, x: 0, autoAlpha: 1, ease:Power2.easeOut})
+				.staggerTo(ch, 0.3, {x : 0, ease:Power2.easeOut}, 0.1, '-=.3')
+				.to(rac, 0.4, {width: '100%', ease:Power2.easeOut}, '-=.4')
+				.to(rac, 0.1, {left: "auto", right: 0})
+				.to(job, 0.1, {opacity: 1}, '-=0.1')
+				.to(rac, 0.4, {width: 0, ease:Power2.easeOut})
+				.add('nav')
+				.to(nav, 0.6, {right: '6%', autoAlpha: 1, ease:Power2.easeIn}, '-=.6')
+				.to(scroll, 0.6, {autoAlpha: 1, ease:Power2.easeIn}, 'nav-=.6');
 
-			// LOADER TIMLINE
-			tlLoader
-				.fromTo(piece, .5,
-					{autoAlpha: 1},
-					{autoAlpha: 0},
-				)
-				.staggerFromTo(piece, 0.5,
-					{autoAlpha: 0},
-					{autoAlpha: 1},
-					0.5
-				);
-
-			function loadContent() {
-				var tlLoadOut = new TimelineLite({onComplete: contentIn});
-				tlLoader
-					$('.logo').removeClass('first');
-			}
-
-		    function contentIn(){
-		      tl.play();
-		    }	
-
-		})(jQuery);	
 
 
 		(function($) {
-
-			var senterObject = new ScrollMagic.Scene({
-				triggerElement: '.senter-object',
-				duration: 400,
-				triggerHook: 0
-			})
-			.setTween('.senter-object', {y: '-100px', scale: 1.1})
-			// .addIndicators({
-			// 	name: 'contactTitle',
-			// 	colorTrigger: 'black',
-			// 	colorStart: '#75c695',
-			// 	colorEnd: 'pink'
-			// })
-			.addTo(controller);
-
-			var backgroundFooterImg = new ScrollMagic.Scene({
-				triggerElement: '.background-img',
-				duration: 400,
-				triggerHook:0.9
-			})
-			.setTween('.background-img', {y: 0, scale: '1'})
-			// .addIndicators({
-			// 	name: 'contactTitle',
-			// 	colorTrigger: 'black',
-			// 	colorStart: '#75c695',
-			// 	colorEnd: 'pink'
-			// })
-			.addTo(controller);
 
 			var titleContact = new ScrollMagic.Scene({
 				triggerElement: '#contact h2',
@@ -308,20 +227,6 @@
 				triggerHook:0.8
 			})
 			.setTween('#contact h2', {opacity: 1, y: '0px'})
-			// .addIndicators({
-			// 	name: 'contactTitle',
-			// 	colorTrigger: 'black',
-			// 	colorStart: '#75c695',
-			// 	colorEnd: 'pink'
-			// })
-			.addTo(controller);
-
-			var contactIinks = new ScrollMagic.Scene({
-				triggerElement: '.contact-links',
-				duration: 100,
-				triggerHook:0.9
-			})
-			.setTween('.contact-links', {opacity: 1, width: 260, y: 0})
 			// .addIndicators({
 			// 	name: 'contactTitle',
 			// 	colorTrigger: 'black',
@@ -355,6 +260,29 @@
 			var	clientWidth = window.innerWidth;			
 
 			if(clientWidth < 768) {
+
+				var mainTextContent = new ScrollMagic.Scene({
+					triggerElement: '#work',
+					duration: 200,
+					triggerHook:0.9
+				})
+				.setTween('.main-view', {opacity: 0, scale: .95})
+				// .addIndicators({
+				// 	name: 'contactTitle',
+				// 	colorTrigger: 'black',
+				// 	colorStart: '#75c695',
+				// 	colorEnd: 'pink'
+				// })
+				.addTo(controller);
+
+
+				var addBlur = new ScrollMagic.Scene({
+					triggerElement: '#work',
+					triggerHook:0.8
+				})
+				.setClassToggle('.main-view', 'add-blur')
+				.addTo(controller);				
+
 
 				var workImage1 = new ScrollMagic.Scene({
 						triggerElement: '.front-page-1',
@@ -458,19 +386,34 @@
 
 			} else {
 
-				// MAIN BACKGROUND IMAGE PARALLAX ANIMATION
-				var mainImge = new ScrollMagic.Scene({
-					triggerElement: '.main-image',
-					duration: '100%',
-					triggerHook: 0
+				var mainTextContent = new ScrollMagic.Scene({
+					triggerElement: '#work',
+					duration: 1200,
+					triggerHook:0.8
 				})
-				.setTween('.main-image', {y: '20%'})
+				.setTween('.senter-object', {opacity: 0, scale: .95})
 				// .addIndicators({
-				// 	name: 'duration1',
+				// 	name: 'contactTitle',
 				// 	colorTrigger: 'black',
 				// 	colorStart: '#75c695',
 				// 	colorEnd: 'pink'
 				// })
+				.addTo(controller);
+
+
+				var scrollAppear = new ScrollMagic.Scene({
+					triggerElement: '#work',
+					duration: 300,
+					triggerHook:0.8
+				})
+				.setTween('.scroll', {opacity: 0})
+				.addTo(controller);
+
+
+				var addBlur = new ScrollMagic.Scene({
+					triggerElement: '#work'
+				})
+				.setClassToggle('#senter-object', 'add-blur')
 				.addTo(controller);
 
 
@@ -487,7 +430,7 @@
 						tl = new TimelineLite();
 
 					tl							
-						.to(heightImg, .4, {height: '40rem', ease:Power2.easeIn})
+						.to(heightImg, .4, {height: '36vw', ease:Power2.easeIn})
 						.to(heightRectangle, .4, {height: '120%', ease:Power2.easeIn})
 						.add('line1')
 						.to(line1, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut})
@@ -502,6 +445,7 @@
 				// })
 				.addTo(controller);	
 
+
 				var workImage2 = new ScrollMagic.Scene({
 					triggerElement: '.front-page-2',
 					triggerHook: 0.9
@@ -515,7 +459,7 @@
 						tl = new TimelineLite();
 
 					tl
-						.to(heightImg, .4, {height: '40rem', ease:Power2.easeIn})
+						.to(heightImg, .4, {height: '36vw', ease:Power2.easeIn})
 						.to(heightRectangle, .4, {height: '60%', ease:Power2.easeIn})
 						.add('line1')
 						.to(line1, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut})
@@ -530,6 +474,7 @@
 				// })
 				.addTo(controller);	
 
+
 				var workImage3 = new ScrollMagic.Scene({
 					triggerElement: '.front-page-3',
 					triggerHook: 0.9
@@ -543,7 +488,7 @@
 						tl = new TimelineLite();
 
 					tl
-						.to(heightImg, .4, {height: '40rem', ease:Power2.easeIn})
+						.to(heightImg, .4, {height: '36vw', ease:Power2.easeIn})
 						.to(heightRectangle, .4, {height: '140%', ease:Power2.easeIn})
 						.add('line1')
 						.to(line1, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut})
@@ -644,22 +589,7 @@
 				// 	colorStart: '#75c695',
 				// 	colorEnd: 'pink'
 				// })
-				.addTo(controller);	
-
-				var paragraph1 = new ScrollMagic.Scene({
-					triggerElement: '.teaser-ditail',
-					duration: '120%',
-					triggerHook:0.9
-				})
-				.setTween('.work01', {y: '-50px'})
-				// .addIndicators({
-				// 	name: 'duration1',
-				// 	colorTrigger: 'black',
-				// 	colorStart: '#75c695',
-				// 	colorEnd: 'pink'
-				// })
-				.addTo(controller);	
-			
+				.addTo(controller);				
 
 			}
 
