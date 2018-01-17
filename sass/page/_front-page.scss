@@ -431,7 +431,7 @@
 
 						.ryu,
 						.taka {
-							width: 16%;
+							width: 12%;
 						}
 					} 
 
@@ -441,38 +441,38 @@
 						.ryu {
 
 							&:nth-child(2) {
-								@include prefix-transform(translateX(-24px))
+								@include prefix-transform(translateX(-10px))
 							}
 							&:nth-child(3) {
-								@include prefix-transform(translateX(-45px))
+								@include prefix-transform(translateX(-18px))
 							}
 						}
 					}
 
 					.last-name > .taka {
 						&:nth-child(2) {
-							@include prefix-transform(translateX(-28px))
+							@include prefix-transform(translateX(-16px))
 						}
 						&:nth-child(3) {
-							@include prefix-transform(translateX(-47px))
+							@include prefix-transform(translateX(-21px))
 						}
 						&:nth-child(4) {
-							@include prefix-transform(translateX(-68px))
+							@include prefix-transform(translateX(-29px))
 						}
 						&:nth-child(5) {
-							@include prefix-transform(translateX(-88px))
+							@include prefix-transform(translateX(-34px))
 						}
 						&:nth-child(6) {
-							@include prefix-transform(translateX(-107px))
+							@include prefix-transform(translateX(-39px))
 						}
 						&:nth-child(7) {
-							@include prefix-transform(translateX(-126px))
+							@include prefix-transform(translateX(-43px))
 						}
 						&:nth-child(8) {
-							@include prefix-transform(translateX(-154px))
+							@include prefix-transform(translateX(-57px))
 						}
 						&:nth-child(9) {
-							@include prefix-transform(translateX(-171px))
+							@include prefix-transform(translateX(-59px))
 						}
 					}
 				}
