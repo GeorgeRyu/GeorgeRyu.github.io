@@ -414,7 +414,7 @@
 			.greetig-1 {
 				left: -2%;
 				right: -2%;
-				top: -22%;
+				top: -26%;
 				font-size: 33vw;
 				color: #efefef;					
 			}
@@ -441,35 +441,44 @@
 						.ryu {
 
 							&:nth-child(2) {
-								@include prefix-transform(translateX(-10px))
+								/*@include prefix-transform(translateX(-10px))*/
+								@include prefix-transform(translateX(0px))
 							}
 							&:nth-child(3) {
-								@include prefix-transform(translateX(-18px))
+								/*@include prefix-transform(translateX(-18px))*/
+								@include prefix-transform(translateX(0px))
 							}
 						}
 					}
 
 					.last-name > .taka {
 						&:nth-child(2) {
-							@include prefix-transform(translateX(-16px))
+							/*@include prefix-transform(translateX(-16px))*/
+							@include prefix-transform(translateX(0px))
 						}
 						&:nth-child(3) {
-							@include prefix-transform(translateX(-21px))
+							/*@include prefix-transform(translateX(-21px))*/
+							@include prefix-transform(translateX(0px))
 						}
 						&:nth-child(4) {
-							@include prefix-transform(translateX(-29px))
+							/*@include prefix-transform(translateX(-29px))*/
+							@include prefix-transform(translateX(0px))
 						}
 						&:nth-child(5) {
-							@include prefix-transform(translateX(-34px))
+							/*@include prefix-transform(translateX(-34px))*/
+							@include prefix-transform(translateX(0px))
 						}
 						&:nth-child(6) {
-							@include prefix-transform(translateX(-39px))
+							/*@include prefix-transform(translateX(-39px))*/
+							@include prefix-transform(translateX(0px))
 						}
 						&:nth-child(7) {
-							@include prefix-transform(translateX(-43px))
+							/*@include prefix-transform(translateX(-43px))*/
+							@include prefix-transform(translateX(0px))
 						}
 						&:nth-child(8) {
-							@include prefix-transform(translateX(-57px))
+							/*@include prefix-transform(translateX(-57px))*/
+							@include prefix-transform(translateX(0px))
 						}
 						&:nth-child(9) {
 							@include prefix-transform(translateX(-59px))
