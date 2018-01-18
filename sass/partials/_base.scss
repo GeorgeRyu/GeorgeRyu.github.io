@@ -93,7 +93,7 @@ figure {
 
 .width {
 	width: 100%;
-	padding: 0 6%;
+	padding: 0 12%;
 }
 
 .cover {
@@ -114,6 +114,10 @@ figure {
 		font-size: 3rem;
 		line-height: 3.6rem;			
 	}
+
+	.width {
+		padding: 0 6%;
+	}	
 
 }
 
