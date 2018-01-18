@@ -877,7 +877,7 @@ footer .copyright {
   .main-view .senter-object .main-text .my-name .first-name .taka,
   .main-view .senter-object .main-text .my-name .last-name .ryu,
   .main-view .senter-object .main-text .my-name .last-name .taka {
-    width: 24%;
+    width: 12%;
   }
   /* line 438, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .first-name {
@@ -960,53 +960,54 @@ footer .copyright {
   }
   /* line 483, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(9) {
-    -webkit-transform: translateX(-59px);
-    -moz-transform: translateX(-59px);
-    -ms-transform: translateX(-59px);
-    transform: translateX(-59px);
+    /*@include prefix-transform(translateX(-59px))*/
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
   }
-  /* line 489, ../sass/page/_front-page.scss */
+  /* line 490, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-job {
     font-size: 5vw;
     line-height: 6vw;
   }
-  /* line 496, ../sass/page/_front-page.scss */
+  /* line 497, ../sass/page/_front-page.scss */
   .main-view #scroll {
     position: absolute;
   }
 
-  /* line 503, ../sass/page/_front-page.scss */
+  /* line 504, ../sass/page/_front-page.scss */
   #work {
     padding-top: 200px;
   }
-  /* line 507, ../sass/page/_front-page.scss */
+  /* line 508, ../sass/page/_front-page.scss */
   #work .inner .teaser {
     margin-bottom: 200px;
     background-color: #fafafa;
     box-shadow: 4px 4px 20px transparent;
   }
-  /* line 512, ../sass/page/_front-page.scss */
+  /* line 513, ../sass/page/_front-page.scss */
   #work .inner .teaser figure {
     float: none;
     margin-bottom: 24px;
     width: 100%;
     overflow: hidden;
   }
-  /* line 518, ../sass/page/_front-page.scss */
+  /* line 519, ../sass/page/_front-page.scss */
   #work .inner .teaser figure a {
     height: 240px;
   }
-  /* line 521, ../sass/page/_front-page.scss */
+  /* line 522, ../sass/page/_front-page.scss */
   #work .inner .teaser figure a .darkblue {
     display: none;
   }
-  /* line 525, ../sass/page/_front-page.scss */
+  /* line 526, ../sass/page/_front-page.scss */
   #work .inner .teaser figure a img {
     opacity: 0;
     filter: none;
     transform: translateX(-10%);
   }
-  /* line 532, ../sass/page/_front-page.scss */
+  /* line 533, ../sass/page/_front-page.scss */
   #work .inner .teaser figure .rec {
     width: 100%;
     height: 100%;
@@ -1018,13 +1019,13 @@ footer .copyright {
     display: block;
     transform: translateX(-140%) scale(1) skewX(40deg);
   }
-  /* line 545, ../sass/page/_front-page.scss */
+  /* line 546, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail {
     width: 100%;
     padding: 0 16px 24px;
     text-align: left;
   }
-  /* line 550, ../sass/page/_front-page.scss */
+  /* line 551, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .type,
   #work .inner .teaser .teaser-ditail .title-work,
   #work .inner .teaser .teaser-ditail .explan-s {
@@ -1033,13 +1034,13 @@ footer .copyright {
     -ms-transform: translateX(-16px);
     transform: translateX(-16px);
   }
-  /* line 555, ../sass/page/_front-page.scss */
+  /* line 556, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .type:after,
   #work .inner .teaser .teaser-ditail .title-work:after,
   #work .inner .teaser .teaser-ditail .explan-s:after {
     display: none;
   }
-  /* line 560, ../sass/page/_front-page.scss */
+  /* line 561, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .link-work-sp {
     display: block;
     position: absolute;
@@ -1048,7 +1049,7 @@ footer .copyright {
     padding: 8px 32px;
     overflow: hidden;
   }
-  /* line 568, ../sass/page/_front-page.scss */
+  /* line 569, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .link-work-sp .text-link {
     opacity: 0;
     display: inline-block;
@@ -1060,7 +1061,7 @@ footer .copyright {
     position: relative;
     z-index: 2;
   }
-  /* line 577, ../sass/page/_front-page.scss */
+  /* line 578, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .link-work-sp .bg-link {
     background-color: #DEDC00;
     position: absolute;
