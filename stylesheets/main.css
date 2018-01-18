@@ -861,7 +861,7 @@ footer .copyright {
   .main-view .senter-object .greetig-1 {
     left: -2%;
     right: -2%;
-    top: -22%;
+    top: -26%;
     font-size: 33vw;
     color: #efefef;
   }
@@ -877,7 +877,7 @@ footer .copyright {
   .main-view .senter-object .main-text .my-name .first-name .taka,
   .main-view .senter-object .main-text .my-name .last-name .ryu,
   .main-view .senter-object .main-text .my-name .last-name .taka {
-    width: 12%;
+    width: 24%;
   }
   /* line 438, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .first-name {
@@ -888,116 +888,125 @@ footer .copyright {
   }
   /* line 443, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .first-name .ryu:nth-child(2) {
-    -webkit-transform: translateX(-10px);
-    -moz-transform: translateX(-10px);
-    -ms-transform: translateX(-10px);
-    transform: translateX(-10px);
+    /*@include prefix-transform(translateX(-10px))*/
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
   }
-  /* line 446, ../sass/page/_front-page.scss */
+  /* line 447, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .first-name .ryu:nth-child(3) {
-    -webkit-transform: translateX(-18px);
-    -moz-transform: translateX(-18px);
-    -ms-transform: translateX(-18px);
-    transform: translateX(-18px);
+    /*@include prefix-transform(translateX(-18px))*/
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
   }
-  /* line 453, ../sass/page/_front-page.scss */
+  /* line 455, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(2) {
-    -webkit-transform: translateX(-16px);
-    -moz-transform: translateX(-16px);
-    -ms-transform: translateX(-16px);
-    transform: translateX(-16px);
-  }
-  /* line 456, ../sass/page/_front-page.scss */
-  .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(3) {
-    -webkit-transform: translateX(-21px);
-    -moz-transform: translateX(-21px);
-    -ms-transform: translateX(-21px);
-    transform: translateX(-21px);
+    /*@include prefix-transform(translateX(-16px))*/
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
   }
   /* line 459, ../sass/page/_front-page.scss */
+  .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(3) {
+    /*@include prefix-transform(translateX(-21px))*/
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  /* line 463, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(4) {
-    -webkit-transform: translateX(-29px);
-    -moz-transform: translateX(-29px);
-    -ms-transform: translateX(-29px);
-    transform: translateX(-29px);
+    /*@include prefix-transform(translateX(-29px))*/
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
   }
-  /* line 462, ../sass/page/_front-page.scss */
+  /* line 467, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(5) {
-    -webkit-transform: translateX(-34px);
-    -moz-transform: translateX(-34px);
-    -ms-transform: translateX(-34px);
-    transform: translateX(-34px);
-  }
-  /* line 465, ../sass/page/_front-page.scss */
-  .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(6) {
-    -webkit-transform: translateX(-39px);
-    -moz-transform: translateX(-39px);
-    -ms-transform: translateX(-39px);
-    transform: translateX(-39px);
-  }
-  /* line 468, ../sass/page/_front-page.scss */
-  .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(7) {
-    -webkit-transform: translateX(-43px);
-    -moz-transform: translateX(-43px);
-    -ms-transform: translateX(-43px);
-    transform: translateX(-43px);
+    /*@include prefix-transform(translateX(-34px))*/
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
   }
   /* line 471, ../sass/page/_front-page.scss */
-  .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(8) {
-    -webkit-transform: translateX(-57px);
-    -moz-transform: translateX(-57px);
-    -ms-transform: translateX(-57px);
-    transform: translateX(-57px);
+  .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(6) {
+    /*@include prefix-transform(translateX(-39px))*/
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
   }
-  /* line 474, ../sass/page/_front-page.scss */
+  /* line 475, ../sass/page/_front-page.scss */
+  .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(7) {
+    /*@include prefix-transform(translateX(-43px))*/
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  /* line 479, ../sass/page/_front-page.scss */
+  .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(8) {
+    /*@include prefix-transform(translateX(-57px))*/
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  /* line 483, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(9) {
     -webkit-transform: translateX(-59px);
     -moz-transform: translateX(-59px);
     -ms-transform: translateX(-59px);
     transform: translateX(-59px);
   }
-  /* line 480, ../sass/page/_front-page.scss */
+  /* line 489, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-job {
     font-size: 5vw;
     line-height: 6vw;
   }
-  /* line 487, ../sass/page/_front-page.scss */
+  /* line 496, ../sass/page/_front-page.scss */
   .main-view #scroll {
     position: absolute;
   }
 
-  /* line 494, ../sass/page/_front-page.scss */
+  /* line 503, ../sass/page/_front-page.scss */
   #work {
     padding-top: 200px;
   }
-  /* line 498, ../sass/page/_front-page.scss */
+  /* line 507, ../sass/page/_front-page.scss */
   #work .inner .teaser {
     margin-bottom: 200px;
     background-color: #fafafa;
     box-shadow: 4px 4px 20px transparent;
   }
-  /* line 503, ../sass/page/_front-page.scss */
+  /* line 512, ../sass/page/_front-page.scss */
   #work .inner .teaser figure {
     float: none;
     margin-bottom: 24px;
     width: 100%;
     overflow: hidden;
   }
-  /* line 509, ../sass/page/_front-page.scss */
+  /* line 518, ../sass/page/_front-page.scss */
   #work .inner .teaser figure a {
     height: 240px;
   }
-  /* line 512, ../sass/page/_front-page.scss */
+  /* line 521, ../sass/page/_front-page.scss */
   #work .inner .teaser figure a .darkblue {
     display: none;
   }
-  /* line 516, ../sass/page/_front-page.scss */
+  /* line 525, ../sass/page/_front-page.scss */
   #work .inner .teaser figure a img {
     opacity: 0;
     filter: none;
     transform: translateX(-10%);
   }
-  /* line 523, ../sass/page/_front-page.scss */
+  /* line 532, ../sass/page/_front-page.scss */
   #work .inner .teaser figure .rec {
     width: 100%;
     height: 100%;
@@ -1009,13 +1018,13 @@ footer .copyright {
     display: block;
     transform: translateX(-140%) scale(1) skewX(40deg);
   }
-  /* line 536, ../sass/page/_front-page.scss */
+  /* line 545, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail {
     width: 100%;
     padding: 0 16px 24px;
     text-align: left;
   }
-  /* line 541, ../sass/page/_front-page.scss */
+  /* line 550, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .type,
   #work .inner .teaser .teaser-ditail .title-work,
   #work .inner .teaser .teaser-ditail .explan-s {
@@ -1024,13 +1033,13 @@ footer .copyright {
     -ms-transform: translateX(-16px);
     transform: translateX(-16px);
   }
-  /* line 546, ../sass/page/_front-page.scss */
+  /* line 555, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .type:after,
   #work .inner .teaser .teaser-ditail .title-work:after,
   #work .inner .teaser .teaser-ditail .explan-s:after {
     display: none;
   }
-  /* line 551, ../sass/page/_front-page.scss */
+  /* line 560, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .link-work-sp {
     display: block;
     position: absolute;
@@ -1039,7 +1048,7 @@ footer .copyright {
     padding: 8px 32px;
     overflow: hidden;
   }
-  /* line 559, ../sass/page/_front-page.scss */
+  /* line 568, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .link-work-sp .text-link {
     opacity: 0;
     display: inline-block;
@@ -1051,7 +1060,7 @@ footer .copyright {
     position: relative;
     z-index: 2;
   }
-  /* line 568, ../sass/page/_front-page.scss */
+  /* line 577, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .link-work-sp .bg-link {
     background-color: #DEDC00;
     position: absolute;
