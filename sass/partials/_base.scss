@@ -106,6 +106,10 @@ figure {
 
 @include phone {
 
+	h1 {
+		line-height: 3.5rem;
+	}
+
 	h2 {
 		font-size: 3rem;
 		line-height: 3.6rem;			

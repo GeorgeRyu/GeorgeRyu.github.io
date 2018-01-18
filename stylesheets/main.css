@@ -139,6 +139,11 @@ figure {
 
 @media only screen and (max-width: 768px) {
   /* line 109, ../sass/partials/_base.scss */
+  h1 {
+    line-height: 3.5rem;
+  }
+
+  /* line 113, ../sass/partials/_base.scss */
   h2 {
     font-size: 3rem;
     line-height: 3.6rem;
