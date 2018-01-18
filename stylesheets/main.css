@@ -883,14 +883,22 @@ footer .copyright {
   .main-view .senter-object .main-text .my-name .last-name .taka {
     width: 11%;
   }
-  /* line 439, ../sass/page/_front-page.scss */
+  /* line 437, ../sass/page/_front-page.scss */
+  .main-view .senter-object .main-text .my-name .first-name .ryu .ch,
+  .main-view .senter-object .main-text .my-name .first-name .taka .ch,
+  .main-view .senter-object .main-text .my-name .last-name .ryu .ch,
+  .main-view .senter-object .main-text .my-name .last-name .taka .ch {
+    display: block;
+    width: 100%;
+  }
+  /* line 444, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .first-name {
     -webkit-transform: translateX(-2px);
     -moz-transform: translateX(-2px);
     -ms-transform: translateX(-2px);
     transform: translateX(-2px);
   }
-  /* line 444, ../sass/page/_front-page.scss */
+  /* line 449, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .first-name .ryu:nth-child(2) {
     /*@include prefix-transform(translateX(-10px))*/
     -webkit-transform: translateX(0px);
@@ -898,7 +906,7 @@ footer .copyright {
     -ms-transform: translateX(0px);
     transform: translateX(0px);
   }
-  /* line 448, ../sass/page/_front-page.scss */
+  /* line 453, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .first-name .ryu:nth-child(3) {
     /*@include prefix-transform(translateX(-18px))*/
     -webkit-transform: translateX(0px);
@@ -906,7 +914,7 @@ footer .copyright {
     -ms-transform: translateX(0px);
     transform: translateX(0px);
   }
-  /* line 456, ../sass/page/_front-page.scss */
+  /* line 461, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(2) {
     /*@include prefix-transform(translateX(-16px))*/
     -webkit-transform: translateX(0px);
@@ -914,7 +922,7 @@ footer .copyright {
     -ms-transform: translateX(0px);
     transform: translateX(0px);
   }
-  /* line 460, ../sass/page/_front-page.scss */
+  /* line 465, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(3) {
     /*@include prefix-transform(translateX(-21px))*/
     -webkit-transform: translateX(0px);
@@ -922,7 +930,7 @@ footer .copyright {
     -ms-transform: translateX(0px);
     transform: translateX(0px);
   }
-  /* line 464, ../sass/page/_front-page.scss */
+  /* line 469, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(4) {
     /*@include prefix-transform(translateX(-29px))*/
     -webkit-transform: translateX(0px);
@@ -930,7 +938,7 @@ footer .copyright {
     -ms-transform: translateX(0px);
     transform: translateX(0px);
   }
-  /* line 468, ../sass/page/_front-page.scss */
+  /* line 473, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(5) {
     /*@include prefix-transform(translateX(-34px))*/
     -webkit-transform: translateX(0px);
@@ -938,7 +946,7 @@ footer .copyright {
     -ms-transform: translateX(0px);
     transform: translateX(0px);
   }
-  /* line 472, ../sass/page/_front-page.scss */
+  /* line 477, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(6) {
     /*@include prefix-transform(translateX(-39px))*/
     -webkit-transform: translateX(0px);
@@ -946,7 +954,7 @@ footer .copyright {
     -ms-transform: translateX(0px);
     transform: translateX(0px);
   }
-  /* line 476, ../sass/page/_front-page.scss */
+  /* line 481, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(7) {
     /*@include prefix-transform(translateX(-43px))*/
     -webkit-transform: translateX(0px);
@@ -954,7 +962,7 @@ footer .copyright {
     -ms-transform: translateX(0px);
     transform: translateX(0px);
   }
-  /* line 480, ../sass/page/_front-page.scss */
+  /* line 485, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(8) {
     /*@include prefix-transform(translateX(-57px))*/
     -webkit-transform: translateX(0px);
@@ -962,7 +970,7 @@ footer .copyright {
     -ms-transform: translateX(0px);
     transform: translateX(0px);
   }
-  /* line 484, ../sass/page/_front-page.scss */
+  /* line 489, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(9) {
     /*@include prefix-transform(translateX(-59px))*/
     -webkit-transform: translateX(0px);
@@ -970,48 +978,48 @@ footer .copyright {
     -ms-transform: translateX(0px);
     transform: translateX(0px);
   }
-  /* line 491, ../sass/page/_front-page.scss */
+  /* line 496, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-job {
     font-size: 5vw;
     line-height: 6vw;
   }
-  /* line 498, ../sass/page/_front-page.scss */
+  /* line 503, ../sass/page/_front-page.scss */
   .main-view #scroll {
     position: absolute;
   }
 
-  /* line 505, ../sass/page/_front-page.scss */
+  /* line 510, ../sass/page/_front-page.scss */
   #work {
     padding-top: 200px;
   }
-  /* line 509, ../sass/page/_front-page.scss */
+  /* line 514, ../sass/page/_front-page.scss */
   #work .inner .teaser {
     margin-bottom: 200px;
     background-color: #fafafa;
     box-shadow: 4px 4px 20px transparent;
   }
-  /* line 514, ../sass/page/_front-page.scss */
+  /* line 519, ../sass/page/_front-page.scss */
   #work .inner .teaser figure {
     float: none;
     margin-bottom: 24px;
     width: 100%;
     overflow: hidden;
   }
-  /* line 520, ../sass/page/_front-page.scss */
+  /* line 525, ../sass/page/_front-page.scss */
   #work .inner .teaser figure a {
     height: 240px;
   }
-  /* line 523, ../sass/page/_front-page.scss */
+  /* line 528, ../sass/page/_front-page.scss */
   #work .inner .teaser figure a .darkblue {
     display: none;
   }
-  /* line 527, ../sass/page/_front-page.scss */
+  /* line 532, ../sass/page/_front-page.scss */
   #work .inner .teaser figure a img {
     opacity: 0;
     filter: none;
     transform: translateX(-10%);
   }
-  /* line 534, ../sass/page/_front-page.scss */
+  /* line 539, ../sass/page/_front-page.scss */
   #work .inner .teaser figure .rec {
     width: 100%;
     height: 100%;
@@ -1023,13 +1031,13 @@ footer .copyright {
     display: block;
     transform: translateX(-140%) scale(1) skewX(40deg);
   }
-  /* line 547, ../sass/page/_front-page.scss */
+  /* line 552, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail {
     width: 100%;
     padding: 0 16px 24px;
     text-align: left;
   }
-  /* line 552, ../sass/page/_front-page.scss */
+  /* line 557, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .type,
   #work .inner .teaser .teaser-ditail .title-work,
   #work .inner .teaser .teaser-ditail .explan-s {
@@ -1038,13 +1046,13 @@ footer .copyright {
     -ms-transform: translateX(-16px);
     transform: translateX(-16px);
   }
-  /* line 557, ../sass/page/_front-page.scss */
+  /* line 562, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .type:after,
   #work .inner .teaser .teaser-ditail .title-work:after,
   #work .inner .teaser .teaser-ditail .explan-s:after {
     display: none;
   }
-  /* line 562, ../sass/page/_front-page.scss */
+  /* line 567, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .link-work-sp {
     display: block;
     position: absolute;
@@ -1053,7 +1061,7 @@ footer .copyright {
     padding: 8px 32px;
     overflow: hidden;
   }
-  /* line 570, ../sass/page/_front-page.scss */
+  /* line 575, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .link-work-sp .text-link {
     opacity: 0;
     display: inline-block;
@@ -1065,7 +1073,7 @@ footer .copyright {
     position: relative;
     z-index: 2;
   }
-  /* line 579, ../sass/page/_front-page.scss */
+  /* line 584, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .link-work-sp .bg-link {
     background-color: #DEDC00;
     position: absolute;
