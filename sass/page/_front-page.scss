@@ -431,7 +431,7 @@
 
 						.ryu,
 						.taka {
-							width: 24%;
+							width: 12%;
 						}
 					} 
 
@@ -481,7 +481,8 @@
 							@include prefix-transform(translateX(0px))
 						}
 						&:nth-child(9) {
-							@include prefix-transform(translateX(-59px))
+							/*@include prefix-transform(translateX(-59px))*/
+							@include prefix-transform(translateX(0px))
 						}
 					}
 				}
