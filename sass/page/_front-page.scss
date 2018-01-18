@@ -179,7 +179,7 @@
 	overflow: hidden;
 
     .inner {
-		width: 88%;
+		width: 76%;
 		margin: 0 auto;
 
 		.teaser {
@@ -447,48 +447,38 @@
 						.ryu {
 
 							&:nth-child(2) {
-								/*@include prefix-transform(translateX(-10px))*/
-								@include prefix-transform(translateX(0px))
+								@include prefix-transform(translateX(12px))
 							}
 							&:nth-child(3) {
-								/*@include prefix-transform(translateX(-18px))*/
-								@include prefix-transform(translateX(0px))
+								@include prefix-transform(translateX(25px))
 							}
 						}
 					}
 
 					.last-name > .taka {
 						&:nth-child(2) {
-							/*@include prefix-transform(translateX(-16px))*/
-							@include prefix-transform(translateX(0px))
+							@include prefix-transform(translateX(8px))
 						}
 						&:nth-child(3) {
-							/*@include prefix-transform(translateX(-21px))*/
-							@include prefix-transform(translateX(0px))
+							@include prefix-transform(translateX(24px))
 						}
 						&:nth-child(4) {
-							/*@include prefix-transform(translateX(-29px))*/
-							@include prefix-transform(translateX(0px))
+							@include prefix-transform(translateX(38px))
 						}
 						&:nth-child(5) {
-							/*@include prefix-transform(translateX(-34px))*/
-							@include prefix-transform(translateX(0px))
+							@include prefix-transform(translateX(54px))
 						}
 						&:nth-child(6) {
-							/*@include prefix-transform(translateX(-39px))*/
-							@include prefix-transform(translateX(0px))
+							@include prefix-transform(translateX(70px))
 						}
 						&:nth-child(7) {
-							/*@include prefix-transform(translateX(-43px))*/
-							@include prefix-transform(translateX(0px))
+							@include prefix-transform(translateX(86px))
 						}
 						&:nth-child(8) {
-							/*@include prefix-transform(translateX(-57px))*/
-							@include prefix-transform(translateX(0px))
+							@include prefix-transform(translateX(94px))
 						}
 						&:nth-child(9) {
-							/*@include prefix-transform(translateX(-59px))*/
-							@include prefix-transform(translateX(0px))
+							@include prefix-transform(translateX(112px))
 						}
 					}
 				}
@@ -511,6 +501,9 @@
 		padding-top: 200px;
 
 		.inner {
+			width: 88%;
+
+
 			.teaser {
 				margin-bottom: 200px;
 				background-color: #fafafa;
