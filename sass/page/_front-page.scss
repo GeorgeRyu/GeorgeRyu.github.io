@@ -425,7 +425,7 @@
 
 					.first-name,
 					.last-name {
-
+						width: 100%;
 						font-size: 14vw;
 						line-height: 12vw;
 						letter-spacing: -8vw;					
@@ -447,38 +447,38 @@
 						.ryu {
 
 							&:nth-child(2) {
-								@include prefix-transform(translateX(12px))
+								@include prefix-transform(translateX(11px));
 							}
 							&:nth-child(3) {
-								@include prefix-transform(translateX(25px))
+								@include prefix-transform(translateX(25px));
 							}
 						}
 					}
 
 					.last-name > .taka {
 						&:nth-child(2) {
-							@include prefix-transform(translateX(8px))
+							@include prefix-transform(translateX(9px));
 						}
 						&:nth-child(3) {
-							@include prefix-transform(translateX(24px))
+							@include prefix-transform(translateX(24px));
 						}
 						&:nth-child(4) {
-							@include prefix-transform(translateX(38px))
+							@include prefix-transform(translateX(38px));
 						}
 						&:nth-child(5) {
-							@include prefix-transform(translateX(54px))
+							@include prefix-transform(translateX(54px));
 						}
 						&:nth-child(6) {
-							@include prefix-transform(translateX(70px))
+							@include prefix-transform(translateX(70px));
 						}
 						&:nth-child(7) {
-							@include prefix-transform(translateX(86px))
+							@include prefix-transform(translateX(80px));
 						}
 						&:nth-child(8) {
-							@include prefix-transform(translateX(94px))
+							@include prefix-transform(translateX(94px));
 						}
 						&:nth-child(9) {
-							@include prefix-transform(translateX(112px))
+							@include prefix-transform(translateX(112px));
 						}
 					}
 				}
