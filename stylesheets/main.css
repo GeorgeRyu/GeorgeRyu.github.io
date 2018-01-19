@@ -887,7 +887,7 @@ footer .copyright {
   .main-view .senter-object .main-text .my-name .first-name .taka,
   .main-view .senter-object .main-text .my-name .last-name .ryu,
   .main-view .senter-object .main-text .my-name .last-name .taka {
-    width: 11%;
+    width: 0%;
   }
   /* line 437, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .first-name .ryu .ch,
@@ -896,130 +896,134 @@ footer .copyright {
   .main-view .senter-object .main-text .my-name .last-name .taka .ch {
     display: block;
     width: 100%;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
   }
-  /* line 444, ../sass/page/_front-page.scss */
+  /* line 445, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .first-name {
     -webkit-transform: translateX(-2px);
     -moz-transform: translateX(-2px);
     -ms-transform: translateX(-2px);
     transform: translateX(-2px);
   }
-  /* line 449, ../sass/page/_front-page.scss */
+  /* line 450, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .first-name .ryu:nth-child(2) {
     -webkit-transform: translateX(11px);
     -moz-transform: translateX(11px);
     -ms-transform: translateX(11px);
     transform: translateX(11px);
   }
-  /* line 452, ../sass/page/_front-page.scss */
+  /* line 453, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .first-name .ryu:nth-child(3) {
     -webkit-transform: translateX(25px);
     -moz-transform: translateX(25px);
     -ms-transform: translateX(25px);
     transform: translateX(25px);
   }
-  /* line 459, ../sass/page/_front-page.scss */
+  /* line 460, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(2) {
-    -webkit-transform: translateX(9px);
-    -moz-transform: translateX(9px);
-    -ms-transform: translateX(9px);
-    transform: translateX(9px);
+    -webkit-transform: translateX(7px);
+    -moz-transform: translateX(7px);
+    -ms-transform: translateX(7px);
+    transform: translateX(7px);
   }
-  /* line 462, ../sass/page/_front-page.scss */
+  /* line 463, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(3) {
     -webkit-transform: translateX(24px);
     -moz-transform: translateX(24px);
     -ms-transform: translateX(24px);
     transform: translateX(24px);
   }
-  /* line 465, ../sass/page/_front-page.scss */
+  /* line 466, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(4) {
     -webkit-transform: translateX(38px);
     -moz-transform: translateX(38px);
     -ms-transform: translateX(38px);
     transform: translateX(38px);
   }
-  /* line 468, ../sass/page/_front-page.scss */
+  /* line 469, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(5) {
     -webkit-transform: translateX(54px);
     -moz-transform: translateX(54px);
     -ms-transform: translateX(54px);
     transform: translateX(54px);
   }
-  /* line 471, ../sass/page/_front-page.scss */
+  /* line 472, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(6) {
     -webkit-transform: translateX(70px);
     -moz-transform: translateX(70px);
     -ms-transform: translateX(70px);
     transform: translateX(70px);
   }
-  /* line 474, ../sass/page/_front-page.scss */
+  /* line 475, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(7) {
-    -webkit-transform: translateX(80px);
-    -moz-transform: translateX(80px);
-    -ms-transform: translateX(80px);
-    transform: translateX(80px);
+    -webkit-transform: translateX(86px);
+    -moz-transform: translateX(86px);
+    -ms-transform: translateX(86px);
+    transform: translateX(86px);
   }
-  /* line 477, ../sass/page/_front-page.scss */
+  /* line 478, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(8) {
     -webkit-transform: translateX(94px);
     -moz-transform: translateX(94px);
     -ms-transform: translateX(94px);
     transform: translateX(94px);
   }
-  /* line 480, ../sass/page/_front-page.scss */
+  /* line 481, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-name .last-name > .taka:nth-child(9) {
     -webkit-transform: translateX(112px);
     -moz-transform: translateX(112px);
     -ms-transform: translateX(112px);
     transform: translateX(112px);
   }
-  /* line 486, ../sass/page/_front-page.scss */
+  /* line 487, ../sass/page/_front-page.scss */
   .main-view .senter-object .main-text .my-job {
     font-size: 5vw;
     line-height: 6vw;
   }
-  /* line 493, ../sass/page/_front-page.scss */
+  /* line 494, ../sass/page/_front-page.scss */
   .main-view #scroll {
     position: absolute;
   }
 
-  /* line 500, ../sass/page/_front-page.scss */
+  /* line 501, ../sass/page/_front-page.scss */
   #work {
     padding-top: 200px;
   }
-  /* line 503, ../sass/page/_front-page.scss */
+  /* line 504, ../sass/page/_front-page.scss */
   #work .inner {
     width: 88%;
   }
-  /* line 507, ../sass/page/_front-page.scss */
+  /* line 508, ../sass/page/_front-page.scss */
   #work .inner .teaser {
     margin-bottom: 200px;
     background-color: #fafafa;
     box-shadow: 4px 4px 20px transparent;
   }
-  /* line 512, ../sass/page/_front-page.scss */
+  /* line 513, ../sass/page/_front-page.scss */
   #work .inner .teaser figure {
     float: none;
     margin-bottom: 24px;
     width: 100%;
     overflow: hidden;
   }
-  /* line 518, ../sass/page/_front-page.scss */
+  /* line 519, ../sass/page/_front-page.scss */
   #work .inner .teaser figure a {
     height: 240px;
   }
-  /* line 521, ../sass/page/_front-page.scss */
+  /* line 522, ../sass/page/_front-page.scss */
   #work .inner .teaser figure a .darkblue {
     display: none;
   }
-  /* line 525, ../sass/page/_front-page.scss */
+  /* line 526, ../sass/page/_front-page.scss */
   #work .inner .teaser figure a img {
     opacity: 0;
     filter: none;
     transform: translateX(-10%);
   }
-  /* line 532, ../sass/page/_front-page.scss */
+  /* line 533, ../sass/page/_front-page.scss */
   #work .inner .teaser figure .rec {
     width: 100%;
     height: 100%;
@@ -1031,13 +1035,13 @@ footer .copyright {
     display: block;
     transform: translateX(-140%) scale(1) skewX(40deg);
   }
-  /* line 545, ../sass/page/_front-page.scss */
+  /* line 546, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail {
     width: 100%;
     padding: 0 16px 24px;
     text-align: left;
   }
-  /* line 550, ../sass/page/_front-page.scss */
+  /* line 551, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .type,
   #work .inner .teaser .teaser-ditail .title-work,
   #work .inner .teaser .teaser-ditail .explan-s {
@@ -1046,13 +1050,13 @@ footer .copyright {
     -ms-transform: translateX(-16px);
     transform: translateX(-16px);
   }
-  /* line 555, ../sass/page/_front-page.scss */
+  /* line 556, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .type:after,
   #work .inner .teaser .teaser-ditail .title-work:after,
   #work .inner .teaser .teaser-ditail .explan-s:after {
     display: none;
   }
-  /* line 560, ../sass/page/_front-page.scss */
+  /* line 561, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .link-work-sp {
     display: block;
     position: absolute;
@@ -1061,7 +1065,7 @@ footer .copyright {
     padding: 8px 32px;
     overflow: hidden;
   }
-  /* line 568, ../sass/page/_front-page.scss */
+  /* line 569, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .link-work-sp .text-link {
     opacity: 0;
     display: inline-block;
@@ -1073,7 +1077,7 @@ footer .copyright {
     position: relative;
     z-index: 2;
   }
-  /* line 577, ../sass/page/_front-page.scss */
+  /* line 578, ../sass/page/_front-page.scss */
   #work .inner .teaser .teaser-ditail .link-work-sp .bg-link {
     background-color: #DEDC00;
     position: absolute;
