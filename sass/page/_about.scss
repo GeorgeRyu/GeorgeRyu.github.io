@@ -17,11 +17,13 @@
 			width: 860px;
 			margin: 0 auto;
 
-			img {
+			.my-face {
 				position: relative;
 				width: 200px;
 				height: auto;
-				float: left;		
+				float: left;	
+				opacity: 0;
+				@include prefix-transform(translateY(20px));	
 				z-index: 1;	
 			}
 
@@ -31,15 +33,31 @@
 				padding: 5%;
 				display: inline-block;	
 
-				h1 {
-					margin-bottom: 24px;
-					color: $midleGray;
-				}		
+				h2 {
+					margin-bottom: 64px;
+					font-size: 16rem;
+					font-weight: 100;
+					color: #efefef;
+					opacity: 0;
+					@include prefix-transform(translateX(-24px) translateY(-16px));				
+				}
+
+				p {
+					opacity: 0;
+					@include prefix-transform(translateX(-24px) translateY(-24px));
+
+
+					.more-me {
+						color: $yellow;
+					}						
+				}
+	
 			}		
 
 			.bg-yellow {
 				width: 0;
 				height: 0;
+				opacity: 0;
 				border-style: solid;
 				border-width: 200px 200px 0 0;
 				border-color: $yellow transparent transparent transparent;
@@ -57,7 +75,10 @@
 				bottom: -16px;
 				right: -16px;
 				z-index: 1;
+				opacity: 0;
 				transition: right .6s ease;
+				@include prefix-transform(translateX(-24px));
+
 
 				.link-contact {
 					position: relative;
@@ -101,6 +122,8 @@
 				width: 100%;
 				height: 100%;
 				background-color: $black;
+				opacity: 0;
+				/*@include prefix-transform(translateX(-100%) skewX(50deg));*/
 				z-index: -5;
 			}
 		}
@@ -116,23 +139,31 @@
 	
 	#about-page {
 		.about {
-			padding-top: 120px;
+			padding-top: 24vh;
 			margin-bottom: 120px;
 
 			.wrap-aboutcontent {
-				width: 90%;
+				width: 88%;
 
 				.my-face {
-					transform: translateX(-10%) translateY(-10%);				
+					@include prefix-transform(translateY(-40%) translateX(-10%));
 				}
 
 				.text-area {
 					max-width: 100%;
-					padding: 0 10% 30%;				
+					padding: 0 10% 30%;	
+
+					h2 {
+						font-size: 32vw;
+					}			
 				}
 
 				.bg-yellow {
 					border-width: 200px 170px 0 0;				
+				}
+
+				.wrap-a {
+					@include prefix-transform(translateY(-600px));					
 				}
 			}
 		}		

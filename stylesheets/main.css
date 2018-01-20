@@ -1457,29 +1457,54 @@ footer .copyright {
   margin: 0 auto;
 }
 /* line 20, ../sass/page/_about.scss */
-#about-page .about .wrap-aboutcontent img {
+#about-page .about .wrap-aboutcontent .my-face {
   position: relative;
   width: 200px;
   height: auto;
   float: left;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px);
   z-index: 1;
 }
-/* line 28, ../sass/page/_about.scss */
+/* line 30, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .text-area {
   min-width: 50%;
   max-width: 76%;
   padding: 5%;
   display: inline-block;
 }
-/* line 34, ../sass/page/_about.scss */
-#about-page .about .wrap-aboutcontent .text-area h1 {
-  margin-bottom: 24px;
-  color: #9D9D9C;
+/* line 36, ../sass/page/_about.scss */
+#about-page .about .wrap-aboutcontent .text-area h2 {
+  margin-bottom: 64px;
+  font-size: 16rem;
+  font-weight: 100;
+  color: #efefef;
+  opacity: 0;
+  -webkit-transform: translateX(-24px) translateY(-16px);
+  -moz-transform: translateX(-24px) translateY(-16px);
+  -ms-transform: translateX(-24px) translateY(-16px);
+  transform: translateX(-24px) translateY(-16px);
 }
-/* line 40, ../sass/page/_about.scss */
+/* line 45, ../sass/page/_about.scss */
+#about-page .about .wrap-aboutcontent .text-area p {
+  opacity: 0;
+  -webkit-transform: translateX(-24px) translateY(-24px);
+  -moz-transform: translateX(-24px) translateY(-24px);
+  -ms-transform: translateX(-24px) translateY(-24px);
+  transform: translateX(-24px) translateY(-24px);
+}
+/* line 50, ../sass/page/_about.scss */
+#about-page .about .wrap-aboutcontent .text-area p .more-me {
+  color: #DEDC00;
+}
+/* line 57, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .bg-yellow {
   width: 0;
   height: 0;
+  opacity: 0;
   border-style: solid;
   border-width: 200px 200px 0 0;
   border-color: #DEDC00 transparent transparent transparent;
@@ -1488,7 +1513,7 @@ footer .copyright {
   left: 0;
   z-index: 0;
 }
-/* line 52, ../sass/page/_about.scss */
+/* line 70, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .wrap-a {
   position: absolute;
   display: block;
@@ -1497,9 +1522,14 @@ footer .copyright {
   bottom: -16px;
   right: -16px;
   z-index: 1;
+  opacity: 0;
   transition: right .6s ease;
+  -webkit-transform: translateX(-24px);
+  -moz-transform: translateX(-24px);
+  -ms-transform: translateX(-24px);
+  transform: translateX(-24px);
 }
-/* line 62, ../sass/page/_about.scss */
+/* line 83, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .wrap-a .link-contact {
   position: relative;
   display: inline-block;
@@ -1510,7 +1540,7 @@ footer .copyright {
   z-index: 1;
   transition: color .6s ease;
 }
-/* line 73, ../sass/page/_about.scss */
+/* line 94, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .wrap-a:after {
   position: absolute;
   content: '';
@@ -1523,15 +1553,15 @@ footer .copyright {
   border-width: 0 0 100px 130px;
   border-color: transparent transparent #DEDC00 transparent;
 }
-/* line 86, ../sass/page/_about.scss */
+/* line 107, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .wrap-a:hover {
   right: -24px;
 }
-/* line 89, ../sass/page/_about.scss */
+/* line 110, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .wrap-a:hover .link-contact {
   color: #02114B;
 }
-/* line 95, ../sass/page/_about.scss */
+/* line 116, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .bg-about {
   position: absolute;
   top: 0;
@@ -1541,30 +1571,46 @@ footer .copyright {
   width: 100%;
   height: 100%;
   background-color: #02114B;
+  opacity: 0;
+  /*@include prefix-transform(translateX(-100%) skewX(50deg));*/
   z-index: -5;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 118, ../sass/page/_about.scss */
+  /* line 141, ../sass/page/_about.scss */
   #about-page .about {
-    padding-top: 120px;
+    padding-top: 24vh;
     margin-bottom: 120px;
   }
-  /* line 122, ../sass/page/_about.scss */
+  /* line 145, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent {
-    width: 90%;
+    width: 88%;
   }
-  /* line 125, ../sass/page/_about.scss */
+  /* line 148, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .my-face {
-    transform: translateX(-10%) translateY(-10%);
+    -webkit-transform: translateY(-40%) translateX(-10%);
+    -moz-transform: translateY(-40%) translateX(-10%);
+    -ms-transform: translateY(-40%) translateX(-10%);
+    transform: translateY(-40%) translateX(-10%);
   }
-  /* line 129, ../sass/page/_about.scss */
+  /* line 152, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .text-area {
     max-width: 100%;
     padding: 0 10% 30%;
   }
-  /* line 134, ../sass/page/_about.scss */
+  /* line 156, ../sass/page/_about.scss */
+  #about-page .about .wrap-aboutcontent .text-area h2 {
+    font-size: 32vw;
+  }
+  /* line 161, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .bg-yellow {
     border-width: 200px 170px 0 0;
+  }
+  /* line 165, ../sass/page/_about.scss */
+  #about-page .about .wrap-aboutcontent .wrap-a {
+    -webkit-transform: translateY(-600px);
+    -moz-transform: translateY(-600px);
+    -ms-transform: translateY(-600px);
+    transform: translateY(-600px);
   }
 }
