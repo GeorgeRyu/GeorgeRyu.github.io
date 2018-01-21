@@ -23,7 +23,7 @@
 				height: auto;
 				float: left;	
 				opacity: 0;
-				@include prefix-transform(translateY(20px));	
+				@include prefix-transform(translateX(-80px) translateY(63px));	
 				z-index: 1;	
 			}
 
@@ -55,16 +55,15 @@
 			}		
 
 			.bg-yellow {
-				width: 0;
-				height: 0;
-				opacity: 0;
-				border-style: solid;
-				border-width: 200px 200px 0 0;
-				border-color: $yellow transparent transparent transparent;
 				position: absolute;
+				width: 200px;
+				height: 80px;
 				top: 0;
 				left: 0;
-				z-index: 0;			
+				background-color: #DEDC00;
+				opacity: 0;
+				@include prefix-transform(translateX(56px) translateY(-3px) skewY(-38deg));
+				z-index: 0;		
 			}
 
 			.wrap-a {
@@ -123,7 +122,6 @@
 				height: 100%;
 				background-color: $black;
 				opacity: 0;
-				/*@include prefix-transform(translateX(-100%) skewX(50deg));*/
 				z-index: -5;
 			}
 		}
@@ -146,7 +144,7 @@
 				width: 88%;
 
 				.my-face {
-					@include prefix-transform(translateY(-40%) translateX(-10%));
+					@include prefix-transform(translateX(-30%) translateY(0%));
 				}
 
 				.text-area {
@@ -159,11 +157,11 @@
 				}
 
 				.bg-yellow {
-					border-width: 200px 170px 0 0;				
+					@include prefix-transform(translateX(-20px) translateY(18px) skewY(-38deg));
 				}
 
 				.wrap-a {
-					@include prefix-transform(translateY(-600px));					
+					@include prefix-transform(translateX(-24px));					
 				}
 			}
 		}		

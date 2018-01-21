@@ -1463,10 +1463,10 @@ footer .copyright {
   height: auto;
   float: left;
   opacity: 0;
-  -webkit-transform: translateY(20px);
-  -moz-transform: translateY(20px);
-  -ms-transform: translateY(20px);
-  transform: translateY(20px);
+  -webkit-transform: translateX(-80px) translateY(63px);
+  -moz-transform: translateX(-80px) translateY(63px);
+  -ms-transform: translateX(-80px) translateY(63px);
+  transform: translateX(-80px) translateY(63px);
   z-index: 1;
 }
 /* line 30, ../sass/page/_about.scss */
@@ -1502,18 +1502,20 @@ footer .copyright {
 }
 /* line 57, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .bg-yellow {
-  width: 0;
-  height: 0;
-  opacity: 0;
-  border-style: solid;
-  border-width: 200px 200px 0 0;
-  border-color: #DEDC00 transparent transparent transparent;
   position: absolute;
+  width: 200px;
+  height: 80px;
   top: 0;
   left: 0;
+  background-color: #DEDC00;
+  opacity: 0;
+  -webkit-transform: translateX(56px) translateY(-3px) skewY(-38deg);
+  -moz-transform: translateX(56px) translateY(-3px) skewY(-38deg);
+  -ms-transform: translateX(56px) translateY(-3px) skewY(-38deg);
+  transform: translateX(56px) translateY(-3px) skewY(-38deg);
   z-index: 0;
 }
-/* line 70, ../sass/page/_about.scss */
+/* line 69, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .wrap-a {
   position: absolute;
   display: block;
@@ -1529,7 +1531,7 @@ footer .copyright {
   -ms-transform: translateX(-24px);
   transform: translateX(-24px);
 }
-/* line 83, ../sass/page/_about.scss */
+/* line 82, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .wrap-a .link-contact {
   position: relative;
   display: inline-block;
@@ -1540,7 +1542,7 @@ footer .copyright {
   z-index: 1;
   transition: color .6s ease;
 }
-/* line 94, ../sass/page/_about.scss */
+/* line 93, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .wrap-a:after {
   position: absolute;
   content: '';
@@ -1553,15 +1555,15 @@ footer .copyright {
   border-width: 0 0 100px 130px;
   border-color: transparent transparent #DEDC00 transparent;
 }
-/* line 107, ../sass/page/_about.scss */
+/* line 106, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .wrap-a:hover {
   right: -24px;
 }
-/* line 110, ../sass/page/_about.scss */
+/* line 109, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .wrap-a:hover .link-contact {
   color: #02114B;
 }
-/* line 116, ../sass/page/_about.scss */
+/* line 115, ../sass/page/_about.scss */
 #about-page .about .wrap-aboutcontent .bg-about {
   position: absolute;
   top: 0;
@@ -1572,45 +1574,47 @@ footer .copyright {
   height: 100%;
   background-color: #02114B;
   opacity: 0;
-  /*@include prefix-transform(translateX(-100%) skewX(50deg));*/
   z-index: -5;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 141, ../sass/page/_about.scss */
+  /* line 139, ../sass/page/_about.scss */
   #about-page .about {
     padding-top: 24vh;
     margin-bottom: 120px;
   }
-  /* line 145, ../sass/page/_about.scss */
+  /* line 143, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent {
     width: 88%;
   }
-  /* line 148, ../sass/page/_about.scss */
+  /* line 146, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .my-face {
-    -webkit-transform: translateY(-40%) translateX(-10%);
-    -moz-transform: translateY(-40%) translateX(-10%);
-    -ms-transform: translateY(-40%) translateX(-10%);
-    transform: translateY(-40%) translateX(-10%);
+    -webkit-transform: translateX(-30%) translateY(0%);
+    -moz-transform: translateX(-30%) translateY(0%);
+    -ms-transform: translateX(-30%) translateY(0%);
+    transform: translateX(-30%) translateY(0%);
   }
-  /* line 152, ../sass/page/_about.scss */
+  /* line 150, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .text-area {
     max-width: 100%;
     padding: 0 10% 30%;
   }
-  /* line 156, ../sass/page/_about.scss */
+  /* line 154, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .text-area h2 {
     font-size: 32vw;
   }
-  /* line 161, ../sass/page/_about.scss */
+  /* line 159, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .bg-yellow {
-    border-width: 200px 170px 0 0;
+    -webkit-transform: translateX(-20px) translateY(18px) skewY(-38deg);
+    -moz-transform: translateX(-20px) translateY(18px) skewY(-38deg);
+    -ms-transform: translateX(-20px) translateY(18px) skewY(-38deg);
+    transform: translateX(-20px) translateY(18px) skewY(-38deg);
   }
-  /* line 165, ../sass/page/_about.scss */
+  /* line 163, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .wrap-a {
-    -webkit-transform: translateY(-600px);
-    -moz-transform: translateY(-600px);
-    -ms-transform: translateY(-600px);
-    transform: translateY(-600px);
+    -webkit-transform: translateX(-24px);
+    -moz-transform: translateX(-24px);
+    -ms-transform: translateX(-24px);
+    transform: translateX(-24px);
   }
 }
