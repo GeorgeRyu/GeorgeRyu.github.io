@@ -38,11 +38,9 @@
 		<div class="wrap-aboutcontent">
 			<img class="my-face" src="images/face.png" alt="myface-img">
 			<div class="text-area">
-				<h1 class="prata">About me</h1>
+				<h2 class="yester">Hello</h1>
 				<p>
-					My name is Daumantas and I'm a front end developer currently based in Vilnius, Lithuania.<br>
-					Not only that I craft pixel perfect user interfaces but I've also got a strong visual sense, sense for motion and a solid background of theory of UX and UI.
-					I'm always open to all kind of offers - just drop me a line at hello@dau.lt
+					My name is Ryu Takahashi and I'm WEB Designer & Front-end developer. Based on the purpose of the service and the user, I create interactive and easy to use website or applications.<br>If you want to know more about me you can check <a href="./images/resume.pdf" target="_blank" class="more-me nonmover">my resume</a> or feel free to contact me <a href="mailto:r.takahasii@gmail.com" class="nonmover more-me">r.takahashi@gmail.com</a>
 				</p>
 			</div>
 			<div class="bg-yellow"></div>
@@ -70,33 +68,31 @@
 	<script>
 		(function($) {
 
-			var	bgAbout = $('.bg-about'),
-				myFace = $('.my-face'),
+			var	myFace = $('.my-face'),
 				bgYellow = $('.bg-yellow'),
 				linkContact = ('.wrap-a'),
-				h1 = $('.text-area h1'),
+				h2 = $('.text-area h2'),
 				paragraph = $('.text-area p'),	
 				tl = new TimelineLite(),
 				clientWidth = window.innerWidth;
 
 			if(clientWidth > 768) {
 				tl
-					.from(bgAbout, 1, {autoAlpha: 0, x: '-100%', skewX: 50, ease:Power4.easeOut})
-					.from(myFace, 1, {y: 20, autoAlpha: 0, ease:Power3.easeOut}, '-=.5')
-					.from(h1, .8, {x: -24, autoAlpha: 0, ease:Power3.easeOut}, '-=.8')
-					.from(paragraph, .8, {x: -24, autoAlpha: 0, ease:Power3.easeOut}, '-=.6')
-					.add('bgYellow')
-					.from(bgYellow, .8, {autoAlpha: 0, ease:Power3.easeOut})
-					.from(linkContact, .8, {autoAlpha: 0, x: -24, ease:Power3.easeOut}, 'bgYellow');
+					.add('myFace')
+					.to(myFace, 1, {x: 0, y: 0, autoAlpha: 1, ease:Power3.easeOut}, '+=.5')
+					.to(bgYellow, 1, {x: -24, y: 60, autoAlpha: 1, ease:Power3.easeOut}, 'myFace+=.5')
+					.to(h2, .8, {x: 0, autoAlpha: 1, ease:Power3.easeOut}, '-=.4')
+					.to(paragraph, .8, {x: 0, autoAlpha: 1, ease:Power3.easeOut}, '-=.5')
+					.to(linkContact, .8, {autoAlpha: 1, x: 0, ease:Power3.easeOut}, '-=.5');
+
 			} else {
 				tl
-					.from(bgAbout, 1, {autoAlpha: 0, y: '-200%', skewY: 90, ease:Power4.easeOut})
-					.from(myFace, 1.5, {y: '-40%', autoAlpha: 0, ease:Power3.easeOut}, '-=.5')
-					.add('linkContact')
-					.from(linkContact, 3, {autoAlpha: 0, y: -600, ease:Power3.easeOut}, '-=1.3')		
-					.from(h1, .8, {x: -24, autoAlpha: 0, ease:Power3.easeOut}, 'linkContact-=.5')
-					.from(paragraph, .8, {x: -24, autoAlpha: 0, ease:Power3.easeOut}, 'linkContact-=.3')
-					.from(bgYellow, 1, {autoAlpha: 0, ease:Power3.easeOut}, 'linkContact-=.2');
+					.add('myFace')
+					.to(myFace, 1.2, {x: '-10%', y: '-10%', autoAlpha: 1, ease:Power3.easeOut}, '+=.5')
+					.to(bgYellow, 1.2, {x: -60, y: 50, autoAlpha: 1, ease:Power3.easeOut}, 'myFace+=.5')
+					.to(h2, .8, {x: 0, autoAlpha: 1, ease:Power3.easeOut}, '-=.5')
+					.to(paragraph, .8, {x: 0, autoAlpha: 1, ease:Power3.easeOut}, '-=.5')
+					.to(linkContact, 8, {x: 0, autoAlpha: 1, ease:Power3.easeOut}, '-=.5');
 			}
 
 		})(jQuery);	
