@@ -1580,7 +1580,7 @@ footer .copyright {
 @media only screen and (max-width: 768px) {
   /* line 139, ../sass/page/_about.scss */
   #about-page .about {
-    padding-top: 24vh;
+    padding-top: 32vh;
     margin-bottom: 120px;
   }
   /* line 143, ../sass/page/_about.scss */
@@ -1597,7 +1597,7 @@ footer .copyright {
   /* line 150, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .text-area {
     max-width: 100%;
-    padding: 0 10% 30%;
+    padding: 24px 16px 56px;
   }
   /* line 154, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .text-area h2 {
