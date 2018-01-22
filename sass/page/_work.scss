@@ -124,6 +124,10 @@
 			}	
 		}
 
+		.gif-ani {
+			display: none;
+		}
+
 		.explanation-projects {	
 			width: 50%;
 			display: inline-block;
@@ -233,7 +237,7 @@
 			    margin: auto;
 				color: $lightGray;
 				font-size: 12rem;
-				opacity: .2;
+				opacity: .15;
 				z-index: 1;
 			}
 		}
@@ -254,7 +258,7 @@
 			}
 
 			&.to-work2 {
-				background-image: url('../images/work_02.jpg');				
+				background-image: url('../images/work_02_5.jpg');				
 			}
 
 			&.to-work3 {
@@ -351,8 +355,27 @@
 			}
 		}
 
+		.image-movie {
+			.img-pre {
+				display: none;
+			}
+
+			.gif-ani {
+				display: block;
+				height: 28vh;
+				width: 100%;
+				background-size: cover;
+				background-repeat: no-repeat;				
+				background-image: url(../movies/ourmassage.gif);
+			}
+		}
+
 		.next-project {
 			.bg-next-img {
+				left: -5%;
+				height: 110%;
+				width: 110%;
+				margin: auto;
 				opacity: 0.5;
 				filter: blur(2px);
 			}
