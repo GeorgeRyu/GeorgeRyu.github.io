@@ -117,18 +117,18 @@ $(window).on('load',function(){
 
 	if(clientWidth > 768) {
 		tl
-			.from(bgBlack, 1, {x: '-90%', skewX: -40, ease:Power4.easeOut})
+			.from(bgBlack, 1, {x: '-90%', skewX: -40, ease:Power4.easeOut}, '+=.3')
 			.add('titleWork')
-			.from(titleWork, .4, {autoAlpha: 0, x: '-20%', ease:Power2.easeOut}, '-=.6')
-			.from(job, .4, {autoAlpha: 0, x: '-20%', ease:Power2.easeOut}, 'titleWork-=.5')
+			.to(titleWork, .4, {autoAlpha: 1, x: 0, ease:Power2.easeOut}, '-=.6')
+			.to(job, .4, {autoAlpha: 1, x: 0, ease:Power2.easeOut}, 'titleWork-=.5')
 			.to(link, .4, {opacity: 1, x: '20%', ease:Power4.easeIn}, '-=.4')
-			.from(workPic, .6, {top: '-5%', autoAlpha: 0, ease:Power2.easeOut}, '-=.2');
+			.to(workPic, .6, {top: 0, autoAlpha: 1, ease:Power2.easeOut}, '-=.2');
 	} else {
 		tl
-			.from(bgBlack, 1, {x: '-90%', skewX: -40, ease:Power4.easeOut})
+			.from(bgBlack, 1, {x: '-90%', skewX: -40, ease:Power4.easeOut}, '+=.3')
 			.add('titleWork')
-			.from(titleWork, .4, {autoAlpha: 0, x: '-20%', ease:Power2.easeOut}, '-=.6')
-			.from(job, .4, {autoAlpha: 0, x: '-20%', ease:Power2.easeOut}, 'titleWork-=.5')
+			.to(titleWork, .4, {autoAlpha: 1, x: 0, ease:Power2.easeOut}, '-=.6')
+			.to(job, .4, {autoAlpha: 1, x: 0, ease:Power2.easeOut}, 'titleWork-=.5')
 			.to(link, .4, {opacity: 1, ease:Power1.easeOut}, '-=.4')
 			.from(workPic, 1, {autoAlpha: 0, ease:Circ}, 'titleWork');				
 	}
