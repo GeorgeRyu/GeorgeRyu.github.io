@@ -46,15 +46,15 @@ $(window).on('load',function(){
 });
 
 
-// FOOTER ANIMATION 
+// FOOTER ANIMATION
 	var footerContent = new ScrollMagic.Scene({
 		triggerElement: 'footer',
 		triggerHook: 0.8
 	}).on('start', function () {
 
 		var logoSvg = $('.logo-bottom svg'),
-			wrapGauge = $('.wrap-gauge'), 
-			logoGauge = $('#gauge-2'), 
+			wrapGauge = $('.wrap-gauge'),
+			logoGauge = $('#gauge-2'),
 			li = $('.contact-links li'),
 			tl = new TimelineLite();
 
@@ -71,9 +71,35 @@ $(window).on('load',function(){
 	// 	colorStart: '#75c695',
 	// 	colorEnd: 'pink'
 	// })
-			.addTo(controller);	
+			.addTo(controller);
 
 
+// OPENING ANIMATION OF WORK PAGE
+	var	bgBlack = $('.bg-black'),
+		titleWork = $('#title-work'),
+		job = $('.job'),
+		workPic = $('.area-mainimg'),
+		link = $('.link'),
+		tl = new TimelineLite(),
+		clientWidth = window.innerWidth;
+
+	if(clientWidth > 768) {
+		tl
+			.from(bgBlack, 1, {x: '-90%', skewX: -40, ease:Power4.easeOut}, '+=.3')
+			.add('titleWork')
+			.to(titleWork, .4, {autoAlpha: 1, x: 0, ease:Power2.easeOut}, '-=.6')
+			.to(job, .4, {autoAlpha: 1, x: 0, ease:Power2.easeOut}, 'titleWork-=.5')
+			.to(link, .4, {opacity: 1, x: '20%', ease:Power4.easeIn}, '-=.4')
+			.to(workPic, .6, {top: 0, autoAlpha: 1, ease:Power2.easeOut}, '-=.2');
+	} else {
+		tl
+			.from(bgBlack, 1, {x: '-90%', skewX: -40, ease:Power4.easeOut}, '+=.3')
+			.add('titleWork')
+			.to(titleWork, .4, {autoAlpha: 1, x: 0, ease:Power2.easeOut}, '-=.6')
+			.to(job, .4, {autoAlpha: 1, x: 0, ease:Power2.easeOut}, 'titleWork-=.5')
+			.to(link, .4, {opacity: 1, ease:Power1.easeOut}, '-=.4')
+			.from(workPic, 1, {autoAlpha: 0, ease:Circ}, 'titleWork');
+	}
 
 
 // STRETCH TITLE UNDER BORDER IN WORK PAGE
@@ -103,38 +129,57 @@ $(window).on('load',function(){
 		triggerHook:0.8
 	})
 	.setClassToggle('#title-work-4', 'fade-in-title-s')
-	.addTo(controller);	
+	.addTo(controller);
 
 
-// OPENING ANIMATION OF WORK PAGE	
-	var	bgBlack = $('.bg-black'),
-		titleWork = $('#title-work'),
-		job = $('.job'),
-		workPic = $('.area-mainimg'),
-		link = $('.link'),
-		tl = new TimelineLite(),
-		clientWidth = window.innerWidth;
+// EACH PARAGRAPH ANIMATION IN WORK PAGE
+$('.para-part').each(function() {
 
-	if(clientWidth > 768) {
-		tl
-			.from(bgBlack, 1, {x: '-90%', skewX: -40, ease:Power4.easeOut}, '+=.3')
-			.add('titleWork')
-			.to(titleWork, .4, {autoAlpha: 1, x: 0, ease:Power2.easeOut}, '-=.6')
-			.to(job, .4, {autoAlpha: 1, x: 0, ease:Power2.easeOut}, 'titleWork-=.5')
-			.to(link, .4, {opacity: 1, x: '20%', ease:Power4.easeIn}, '-=.4')
-			.to(workPic, .6, {top: 0, autoAlpha: 1, ease:Power2.easeOut}, '-=.2');
-	} else {
-		tl
-			.from(bgBlack, 1, {x: '-90%', skewX: -40, ease:Power4.easeOut}, '+=.3')
-			.add('titleWork')
-			.to(titleWork, .4, {autoAlpha: 1, x: 0, ease:Power2.easeOut}, '-=.6')
-			.to(job, .4, {autoAlpha: 1, x: 0, ease:Power2.easeOut}, 'titleWork-=.5')
-			.to(link, .4, {opacity: 1, ease:Power1.easeOut}, '-=.4')
-			.from(workPic, 1, {autoAlpha: 0, ease:Circ}, 'titleWork');				
-	}
+  var paragraphFadeIn = new ScrollMagic.Scene({
+    triggerElement: this.children[0], //This "this.children[]" is important
+    triggerHook:0.8
+  })
+  .setClassToggle(this, 'fade-in-para') // add class to project01
+  // .addIndicators({
+  //   name: 'fade scene',
+  //   colorTrigger: 'black',
+  //   colorStart: '#75C695',
+  //   colorEnd: 'pink'
+  // })
+  .addTo(controller);
+});
 
 
-// FADEMOVE	
+var paragraphFadeIn = new ScrollMagic.Scene({
+  triggerElement: '.front-page', 
+  triggerHook:0.6
+})
+.setClassToggle('.front-page', 'fp-fadein') // add class to project01
+// .addIndicators({
+//   name: 'fade scene',
+//   colorTrigger: 'black',
+//   colorStart: '#75C695',
+//   colorEnd: 'pink'
+// })
+.addTo(controller);
+
+
+var paragraphFadeIn = new ScrollMagic.Scene({
+  triggerElement: '.sp-site',
+  triggerHook:0.6
+})
+.setClassToggle('.sp-site', 'ss-fadein') // add class to project01
+// .addIndicators({
+//   name: 'fade scene',
+//   colorTrigger: 'black',
+//   colorStart: '#75C695',
+//   colorEnd: 'pink'
+// })
+.addTo(controller);
+
+
+
+// FADEMOVE
 $(function(){
     $('body').fadeMover();
 });

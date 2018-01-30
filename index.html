@@ -17,7 +17,7 @@
 	<meta property="og:site_name" content="Ryu Takahashi - Web designer" />
 
 
-	<link rel="icon" href="images/fav/fav-16x16.png" sizes="16x16" type="image/png"> 
+	<link rel="icon" href="images/fav/fav-16x16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="images/fav/fav-32x32.png" sizes="32x32" type="image/png">
 	<link rel="shortcut icon" href="images/fav/favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,900|Yesteryear" rel="stylesheet">
@@ -30,7 +30,7 @@
 			<ul class="wrap-links">
 				<li><a href="about.html">ABOUT</a></li>
 				<li><a href="work01.html">WORK</a></li>
-			</ul>			
+			</ul>
 		</nav>
 	</header>
 
@@ -46,8 +46,8 @@
 				</g>
 			</svg>
 			<div class="wrap-gauge"><span id="gauge"></span></div>
-	</a>	
-	
+	</a>
+
 	<section class="main-view">
 		<div id="senter-object" class="senter-object">
 			<p class="greetig-1 yester">
@@ -61,7 +61,7 @@
 						<span class="ryu"><span class="ch">U</span></span>
 					</p>
 					<p class="last-name bold">
-						
+
 						<span class="taka"><span class="ch">T</span></span>
 						<span class="taka"><span class="ch">A</span></span>
 						<span class="taka"><span class="ch">K</span></span>
@@ -72,7 +72,7 @@
 						<span class="taka"><span class="ch">H</span></span>
 						<span class="taka"><span class="ch">I</span></span>
 					</p>
-				</div>				
+				</div>
 				<p class="my-job" >
 					<span class="rectangle-job"></span>
 					<span class="text-job">Designer / Front-end Developer</span>
@@ -94,7 +94,7 @@
 						<span class="darkblue"></span>
 						<img class="front-page-1" src="images/work_01.jpg" alt="work-images">
 					</a>
-					<div class="rec rectangle-01"></div>						
+					<div class="rec rectangle-01"></div>
 				</figure>
 				<div class="teaser-ditail work1">
 					<a class="link-work-sp" href="work01.html">
@@ -157,7 +157,7 @@
 					</h3>
 					<br>
 					<p class="explan-s">
-						Greattractive is an application that users can post works such as graphic design, pictures, and photos created by users. Also, if other users who saw the work are interested in the work, they can contact the creator directly and buy and sell the work. 
+						Greattractive is an application that users can post works such as graphic design, pictures, and photos created by users. Also, if other users who saw the work are interested in the work, they can contact the creator directly and buy and sell the work.
 					</p>
 				</div>
 			</article>
@@ -175,7 +175,7 @@
 					</g>
 				</g>
 			</svg>
-			<div class="wrap-gauge"><span id="gauge-2"></span></div>			
+			<div class="wrap-gauge"><span id="gauge-2"></span></div>
 		</div>
 		<div class="contact-links">
 			<ul>
@@ -212,7 +212,7 @@
 
 
 		(function($) {
-	
+
 			var controller = new ScrollMagic.Controller();
 
 			// STRETCH TITLE UNDER BORDER IN FRONT PAGE
@@ -236,7 +236,7 @@
 
 
 			// ANIMATION OF EACH WORK ITEMS
-			var	clientWidth = window.innerWidth;			
+			var	clientWidth = window.innerWidth;
 
 			if(clientWidth < 768) {
 
@@ -301,7 +301,7 @@
 					triggerHook:0.8
 				})
 				.setClassToggle('.main-view', 'add-blur')
-				.addTo(controller);				
+				.addTo(controller);
 
 
 				var workImage1 = new ScrollMagic.Scene({
@@ -310,9 +310,9 @@
 					}).on('start', function () {
 
 						var rectangle1 = $('.rectangle-01'),
-							frontPage1 = $('.front-page-1'), 
+							frontPage1 = $('.front-page-1'),
 							line1 = $('.work1 .type'),
-							line2 = $('.work1 .title-work'), 
+							line2 = $('.work1 .title-work'),
 							line3 = $('.work1 .explan-s'),
 							bgLink = $('.work1 .link-work-sp .bg-link'),
 							textLink = $('.work1 .link-work-sp .text-link'),
@@ -331,7 +331,7 @@
 							.to(line3, .6, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.2')
 							.to(frame, .4, {backgroundColor: '#ffffff', boxShadow: '4px 4px 20px 0px rgba(0, 0, 0, 0.05)', ease:Power2.easeOut});
 					})
-					.addTo(controller);	
+					.addTo(controller);
 
 
 				var workImage2 = new ScrollMagic.Scene({
@@ -340,9 +340,9 @@
 					}).on('start', function () {
 
 						var rectangle1 = $('.rectangle-02'),
-							frontPage1 = $('.front-page-2'), 
+							frontPage1 = $('.front-page-2'),
 							line1 = $('.work2 .type'),
-							line2 = $('.work2 .title-work'), 
+							line2 = $('.work2 .title-work'),
 							line3 = $('.work2 .explan-s'),
 							bgLink = $('.work2 .link-work-sp .bg-link'),
 							textLink = $('.work2 .link-work-sp .text-link'),
@@ -367,7 +367,7 @@
 					// 	colorStart: '#75c695',
 					// 	colorEnd: 'pink'
 					// })
-					.addTo(controller);	
+					.addTo(controller);
 
 
 				var workImage3 = new ScrollMagic.Scene({
@@ -376,9 +376,9 @@
 					}).on('start', function () {
 
 						var rectangle1 = $('.rectangle-03'),
-							frontPage1 = $('.front-page-3'), 
+							frontPage1 = $('.front-page-3'),
 							line1 = $('.work3 .type'),
-							line2 = $('.work3 .title-work'), 
+							line2 = $('.work3 .title-work'),
 							line3 = $('.work3 .explan-s'),
 							bgLink = $('.work3 .link-work-sp .bg-link'),
 							textLink = $('.work3 .link-work-sp .text-link'),
@@ -403,10 +403,17 @@
 					// 	colorStart: '#75c695',
 					// 	colorEnd: 'pink'
 					// })
-					.addTo(controller);	
+					.addTo(controller);
 
 
 			} else {
+
+					var	clientWidths = window.innerWidth;
+
+					if(clientWidths < 768) {
+						$('body').css('display', 'none');
+						console.log('hello');
+					}
 
 
 			// OPNING ANIMATION
@@ -485,11 +492,11 @@
 					var heightImg = $('.front-page-1').parent(),
 						heightRectangle = $('.rectangle-01'),
 						line1 = $('.work1 .type'),
-						line2 = $('.work1 .title-work'), 
+						line2 = $('.work1 .title-work'),
 						line3 = $('.work1 .explan-s'),
 						tl = new TimelineLite();
 
-					tl							
+					tl
 						.to(heightImg, .4, {height: '32vw', ease:Power2.easeIn})
 						.to(heightRectangle, .4, {height: '120%', ease:Power2.easeIn})
 						.add('line1')
@@ -503,7 +510,7 @@
 				// 	colorStart: '#75c695',
 				// 	colorEnd: 'pink'
 				// })
-				.addTo(controller);	
+				.addTo(controller);
 
 
 				var workImage2 = new ScrollMagic.Scene({
@@ -512,9 +519,9 @@
 				}).on('start', function () {
 
 					var heightImg = $('.front-page-2').parent(),
-						heightRectangle = $('.rectangle-02'), 
+						heightRectangle = $('.rectangle-02'),
 						line1 = $('.work2 .type'),
-						line2 = $('.work2 .title-work'), 
+						line2 = $('.work2 .title-work'),
 						line3 = $('.work2 .explan-s'),
 						tl = new TimelineLite();
 
@@ -532,7 +539,7 @@
 				// 	colorStart: '#75c695',
 				// 	colorEnd: 'pink'
 				// })
-				.addTo(controller);	
+				.addTo(controller);
 
 
 				var workImage3 = new ScrollMagic.Scene({
@@ -541,9 +548,9 @@
 				}).on('start', function () {
 
 					var heightImg = $('.front-page-3').parent(),
-						heightRectangle = $('.rectangle-03'), 
+						heightRectangle = $('.rectangle-03'),
 						line1 = $('.work3 .type'),
-						line2 = $('.work3 .title-work'), 
+						line2 = $('.work3 .title-work'),
 						line3 = $('.work3 .explan-s'),
 						tl = new TimelineLite();
 
@@ -561,7 +568,7 @@
 				// 	colorStart: '#75c695',
 				// 	colorEnd: 'pink'
 				// })
-				.addTo(controller);	
+				.addTo(controller);
 
 
 				// UP SCROLL IN FRONT PAGES
@@ -605,9 +612,9 @@
 				// 	colorStart: '#75c695',
 				// 	colorEnd: 'pink'
 				// })
-				.addTo(controller);	
+				.addTo(controller);
 
- 
+
 				var rectangle1 = new ScrollMagic.Scene({
 					triggerElement: '.work1',
 					duration: '120%',
@@ -620,8 +627,8 @@
 				// 	colorStart: '#75c695',
 				// 	colorEnd: 'pink'
 				// })
-				.addTo(controller);	
- 
+				.addTo(controller);
+
 				var rectangle2 = new ScrollMagic.Scene({
 					triggerElement: '.work2',
 					duration: '120%',
@@ -634,9 +641,9 @@
 				// 	colorStart: '#75c695',
 				// 	colorEnd: 'pink'
 				// })
-				.addTo(controller);					
-			
- 
+				.addTo(controller);
+
+
 				var rectangle3 = new ScrollMagic.Scene({
 					triggerElement: '.work3',
 					duration: '120%',
@@ -649,12 +656,12 @@
 				// 	colorStart: '#75c695',
 				// 	colorEnd: 'pink'
 				// })
-				.addTo(controller);				
+				.addTo(controller);
 
 			}
 
-		})(jQuery);	
-	</script>	
+		})(jQuery);
+	</script>
 
 </body>
 
