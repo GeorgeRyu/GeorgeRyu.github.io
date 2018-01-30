@@ -94,11 +94,23 @@
 			position: absolute;
 			top: 0;
 			right: 0;
-			bottom: 0; 
+			bottom: 0;
 			left: 0;
 			background-color: $black;
 /*			@include prefix-transform(translateX(-90%) skewX(-40deg));
-*/			z-index: -1;		
+*/			z-index: -1;
+		}
+	}
+
+
+	.para-part {
+		opacity: 0;
+		filter: blur(5px);
+		transition: all .8s ease;
+
+		&.fade-in-para {
+			opacity: 1;
+			filter: blur(0);
 		}
 	}
 
@@ -109,7 +121,7 @@
 
 		.title-projects {
 			width: 20%;
-			float: left;		
+			float: left;
 		}
 
 		.paragraph-projects {
@@ -125,45 +137,59 @@
 
 		.img-pre {
 			width: 50%;
-			float: left;	
-			
+			float: left;
+
 			img {
 				width: 100%;
-			}	
+			}
 		}
 
 		.gif-ani {
 			display: none;
 		}
 
-		.explanation-projects {	
+		.explanation-projects {
 			width: 50%;
 			display: inline-block;
-			padding-left: 4%;	
+			padding-left: 4%;
 
 			.title-s-work {
 				margin-bottom: 32px;
-			}	
+			}
 		}
 	}
 
+.fade-in-para {
+	opacity: 1;
+	@include prefix-transform(translateY(0));
+}
 
 	.website {
 
 		.title-projects {
 			width: 20%;
-			float: left;		
+			float: left;
 		}
 
 		.paragraph-projects {
 			display: inline-block;
 			width: 80%;
-		}	
+		}
 
 		.front-page {
 			margin: 40px 0;
 			width: 100%;
 			box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+			opacity: 0;
+			filter: blur(8px);
+			@include prefix-transform(translateY(16px) scale(.98));
+			transition: all .6s ease;
+
+			&.fp-fadein {
+				opacity: 1;
+				filter: blur(0);
+				@include prefix-transform(translateY(0) scale(1));
+			}
 
 			img {
 				width: 100%;
@@ -172,11 +198,21 @@
 
 		.sp-site {
 		    width: 100vw;
-		    margin: 0px -15.8%;	
+		    margin: 0px -15.8%;
+				opacity: 0;
+				filter: blur(5px);
+				@include prefix-transform(translateY(16px) scale(1.05));
+				transition: all .6s ease;
+
+				&.ss-fadein {
+					opacity: 1;
+					filter: blur(0);
+					@include prefix-transform(translateY(0) scale(1));
+				}
 
 			&.app-img {
 				margin-top: 40px;
-			}	
+			}
 		}
 	}
 
@@ -193,7 +229,7 @@
 
 			&:after {
 				width: 60px;
-			}	
+			}
 		}
 
 		&:after {
@@ -218,21 +254,21 @@
 		text-align: center;
 		overflow: hidden;
 		background-color: $black;
-		transition: all .4s ease;
+		transition: all .6s ease;
 
 		.wrap-title-next {
 			position: relative;
-
 
 			.title-next {
 			    display: block;
 			    position: relative;
 			    margin: auto;
-				color: $lightGray;
-				font-weight: 200;
-				line-height: 2rem;
-				letter-spacing: .2rem;
-				z-index: 5;
+					color: $lightGray;
+					font-weight: 200;
+					line-height: 2rem;
+					letter-spacing: .2rem;
+					z-index: 5;
+					transition: all .6s cubic-bezier(0.4, 0, 1, 1);
 			}
 
 			.bg-font-next {
@@ -259,24 +295,31 @@
 	    	opacity: .3;
 			height: 100%;
 			z-index: 0;
-			transition: all .4s ease;
+			transition: all .6s cubic-bezier(0.4, 0, 1, 1);
 
 			&.to-work1 {
-				background-image: url('../images/work_01.jpg');				
+				background-image: url('../images/work_01.jpg');
 			}
 
 			&.to-work2 {
-				background-image: url('../images/work_02_5.jpg');				
+				background-image: url('../images/work_02_5.jpg');
 			}
 
 			&.to-work3 {
-				background-image: url('../images/work_03.jpg');				
+				background-image: url('../images/work_03.jpg');
 			}
 		}
 
 		&:hover {
+
+			.wrap-title-next {
+				.title-next {
+					letter-spacing: .4rem;
+				}
+			}
+
 			.bg-next-img {
-				filter: blur(3px);
+				filter: blur(6px);
 			}
 		}
 	}
@@ -330,7 +373,7 @@
 		.paragraph-projects {
 			margin-top: 32px;
 			width: 100%;
-		}		
+		}
 
 		.overview,
 		.previous,
@@ -352,7 +395,7 @@
 					}
 				}
 			}
-			
+
 			.paragraph-projects,
 			.explanation-projects {
 				width: 100%;
@@ -360,7 +403,7 @@
 			}
 
 			.sp-site {
-				margin: 0px -6.4%;				
+				margin: 0px -6.4%;
 			}
 		}
 
@@ -374,12 +417,15 @@
 				height: 28vh;
 				width: 100%;
 				background-size: cover;
-				background-repeat: no-repeat;				
+				background-repeat: no-repeat;
 				background-image: url(../movies/ourmassage.gif);
 			}
 		}
 
 		.next-project {
+			height: 140px;
+	    padding-top: 64px;
+
 			.bg-next-img {
 				left: -5%;
 				height: 110%;
@@ -388,11 +434,6 @@
 				opacity: 0.5;
 				filter: blur(2px);
 			}
-		}		
+		}
 	}
 }
-
-
-
-
-
