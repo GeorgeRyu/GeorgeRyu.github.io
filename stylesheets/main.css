@@ -1962,49 +1962,50 @@ footer .copyright {
   #about-page .about .wrap-aboutcontent .text-area.part2 .left-grada,
   #about-page .about .wrap-aboutcontent .text-area.part2 .right-grada {
     height: 320px;
+    width: 16px;
     bottom: 16%;
   }
-  /* line 382, ../sass/page/_about.scss */
+  /* line 383, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .text-area.part2 .left-grada {
     left: 15px;
   }
-  /* line 386, ../sass/page/_about.scss */
+  /* line 387, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .text-area.part2 .right-grada {
     right: 15px;
   }
-  /* line 390, ../sass/page/_about.scss */
+  /* line 391, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .text-area.part2 .hide-slidebar {
     display: none;
   }
-  /* line 394, ../sass/page/_about.scss */
+  /* line 395, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .text-area.part2 .viewarea-stuffs {
     height: 320px;
   }
-  /* line 397, ../sass/page/_about.scss */
+  /* line 398, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .text-area.part2 .viewarea-stuffs .wrap-stuffs {
     width: 500px;
   }
-  /* line 400, ../sass/page/_about.scss */
+  /* line 401, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .text-area.part2 .viewarea-stuffs .wrap-stuffs .staff {
     width: 120px;
     padding: 12px 24px;
   }
-  /* line 404, ../sass/page/_about.scss */
+  /* line 405, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .text-area.part2 .viewarea-stuffs .wrap-stuffs .staff.icon-no-9 {
     padding: 24px;
   }
-  /* line 414, ../sass/page/_about.scss */
+  /* line 415, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .text-area.part3 h2 {
     font-size: 24vw;
   }
-  /* line 420, ../sass/page/_about.scss */
+  /* line 421, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .bg-yellow {
     -webkit-transform: translateX(-20px) translateY(18px) skewY(-38deg);
     -moz-transform: translateX(-20px) translateY(18px) skewY(-38deg);
     -ms-transform: translateX(-20px) translateY(18px) skewY(-38deg);
     transform: translateX(-20px) translateY(18px) skewY(-38deg);
   }
-  /* line 424, ../sass/page/_about.scss */
+  /* line 425, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .wrap-a {
     top: 700px;
     right: -16px;
@@ -2014,11 +2015,11 @@ footer .copyright {
     -ms-transform: translateX(-24px);
     transform: translateX(-24px);
   }
-  /* line 430, ../sass/page/_about.scss */
+  /* line 431, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .wrap-a:hover {
     right: -16px;
   }
-  /* line 433, ../sass/page/_about.scss */
+  /* line 434, ../sass/page/_about.scss */
   #about-page .about .wrap-aboutcontent .wrap-a:hover .link-contact {
     color: #02114B;
   }
