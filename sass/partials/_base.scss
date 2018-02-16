@@ -25,7 +25,7 @@ h1 {
 	line-height: 4.6rem;
 	font-weight: 900;
 	letter-spacing: 1px;
-	margin: 0; 
+	margin: 0;
 }
 
 h2 {
@@ -38,7 +38,7 @@ h2 {
 h3 {
 	color: $black;
 	letter-spacing: 1px;
-	font-weight: 900;	
+	font-weight: 900;
 	margin: 0;
 }
 
@@ -56,6 +56,7 @@ a {
 	letter-spacing: 1px;
 	text-decoration: none;
 	transition: .3s;
+  cursor: pointer;
 
 	&:hover {
 		color: $yellow;
@@ -83,7 +84,7 @@ figure {
 
 .add-blur {
 	filter: blur(10px);
-	transition: all .6s ease;	    	
+	transition: all .6s ease;
 }
 
 
@@ -99,7 +100,7 @@ figure {
 .cover {
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;	
+    background-repeat: no-repeat;
 }
 
 
@@ -112,14 +113,11 @@ figure {
 
 	h2 {
 		font-size: 3rem;
-		line-height: 3.6rem;			
+		line-height: 3.6rem;
 	}
 
 	.width {
 		padding: 0 6%;
-	}	
+	}
 
 }
-
-
-

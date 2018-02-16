@@ -4,7 +4,7 @@
     text-align: center;
     overflow: hidden;
     height: 100vh;
-    width: 100%;	
+    width: 100%;
 
 	.senter-object {
 		position: fixed;
@@ -13,7 +13,7 @@
 	    left: calc(50% - 604px/2);
 		text-align: left;
 		opacity: 1;
-		transition: all .6s ease;	    	
+		transition: all .6s ease;
 
 		.greetig-1 {
 			position: absolute;
@@ -21,7 +21,7 @@
 			font-size: 12rem;
 			text-align: right;
 			color: #DFE1EA;
-			opacity: 0;	
+			opacity: 0;
 			@include prefix-transform(translateX(-60px) translateY(20px));
 		}
 
@@ -49,7 +49,7 @@
 						.ch {
 							@include prefix-transform(translateX(-90px));
 						}
-					}										
+					}
 				}
 
 				.first-name {
@@ -126,16 +126,16 @@
 		position: fixed;
 		display: block;
 		height: 80px;
-		bottom: 0;	
+		bottom: 0;
 	    left: calc(50% - 54px/2);
 	    opacity: 0;
-		transition: all .6s ease;	    
+		transition: all .6s ease;
 
 		p {
 			margin-top: 24px;
 			font-size: 1rem;
 			color: $yellow;
-			transition: all .6s ease;	    
+			transition: all .6s ease;
 		}
 
 		.line-scroll {
@@ -155,15 +155,15 @@
 			    top: 0px;
 			    left: 0px;
 			    background-color: $yellow;
-			    animation: rotation 2s cubic-bezier(0.66, 0.01, 0.29, 1.01) 0s infinite normal running;				
+			    animation: rotation 2s cubic-bezier(0.66, 0.01, 0.29, 1.01) 0s infinite normal running;
 			}
 
 			@keyframes rotation {
 				0% {
-					@include prefix-transform(translateY(-80px))				
+					@include prefix-transform(translateY(-80px))
 				}
 				100% {
-					@include prefix-transform(translateY(80px))									
+					@include prefix-transform(translateY(80px))
 				}
 			}
 		}
@@ -208,7 +208,7 @@
 						right: 0;
 						left: 0;
 						background: rgba(2, 17, 75, 0.6);
-						z-index: 1;						
+						z-index: 1;
 						transition: all .6s ease;
 					}
 
@@ -235,8 +235,9 @@
 						top: 0;
 						width: 100%;
 						filter: grayscale(100%);
+						@include prefix-transform(scale(1.2));
 						transition: filter 1s ease;
-					}					
+					}
 				}
 
 				.rec {
@@ -251,7 +252,7 @@
 					position: absolute;
 					right: -12%;
 					top: 10px;
-					z-index: -1;					
+					z-index: -1;
 				}
 
 				.rectangle-02 {
@@ -261,7 +262,7 @@
 					position: absolute;
 					left: -6%;
 					top: 300px;
-					z-index: -1;					
+					z-index: -1;
 				}
 
 				.rectangle-03 {
@@ -271,14 +272,14 @@
 					position: absolute;
 					left: 46%;
 					top: -60px;
-					z-index: -1;					
+					z-index: -1;
 				}
 			}
 
 			.teaser-ditail {
 				position: relative;
 				display: inline-block;
-				width: 30%;		
+				width: 30%;
 
 				.type,
 				.title-work,
@@ -293,7 +294,7 @@
 
 				h3 {
 					position: relative;
-				}		
+				}
 			}
 		}
 
@@ -305,7 +306,7 @@
 
 			.teaser-ditail {
 				text-align: right;
-				padding-right: 2%;		
+				padding-right: 2%;
 
 				.title-work {
 
@@ -325,11 +326,11 @@
 						bottom: -4px;
 						right: -20%;
 						background-color: $yellow;
-						transition: all .6s ease;					
+						transition: all .6s ease;
 					}
-				}		
+				}
 			}
-		}		
+		}
 
 		.teaser.left {
 
@@ -339,14 +340,14 @@
 
 			.teaser-ditail {
 				text-align: left;
-				padding-left: 2%;	
+				padding-left: 2%;
 
 				.type,
 				.title-work,
 				.explan-s {
 					opacity: 0;
 					@include prefix-transform(translateX(-16px));
-				}				
+				}
 
 				.title-work {
 
@@ -366,12 +367,12 @@
 						bottom: -4px;
 						left: -20%;
 						background-color: $yellow;
-						transition: all .6s ease;					
+						transition: all .6s ease;
 					}
-				}							
+				}
 			}
-		}		
-    }	
+		}
+    }
 }
 
 
@@ -381,7 +382,7 @@
 		#senter-object {
 
 			.greetig-1 {
-			    left: 196px;				
+			    left: 196px;
 			}
 
 			.main-text {
@@ -390,7 +391,7 @@
 					.last-name {
 						font-size: 11rem;
 						line-height: 9rem;
-						letter-spacing: -4rem;						
+						letter-spacing: -4rem;
 					}
 				}
 			}
@@ -417,7 +418,7 @@
 				right: -2%;
 				top: -26%;
 				font-size: 33vw;
-				color: #efefef;					
+				color: #efefef;
 			}
 
 			.main-text {
@@ -428,7 +429,7 @@
 						width: 100%;
 						font-size: 14vw;
 						line-height: 12vw;
-						letter-spacing: -8vw;					
+						letter-spacing: -8vw;
 
 						.ryu,
 						.taka {
@@ -436,11 +437,11 @@
 
 							.ch {
 								display: block;
-								width: 100%;	
+								width: 100%;
 								@include prefix-transform(translateX(0));
 							}
 						}
-					} 
+					}
 
 					.first-name {
 						@include prefix-transform(translateX(-2px));
@@ -485,8 +486,8 @@
 				}
 
 				.my-job {
-					font-size: 5vw;	
-					line-height: 6vw;					
+					font-size: 5vw;
+					line-height: 6vw;
 				}
 			}
 		}
@@ -524,11 +525,12 @@
 						}
 
 					    img {
-					    	opacity: 0;
+				    	opacity: 0;
 							filter: none;
-							transform: translateX(-10%);					    	
+							transform: translateX(-10%);
+							@include prefix-transform(scale(1));
 					    }
-					}	
+					}
 
 					.rec {
 						width: 100%;
@@ -537,10 +539,10 @@
 						right: 0;
 						left: 0;
 						bottom: 0;
-						z-index: 1;						
+						z-index: 1;
 						display: block;
     					transform: translateX(-140%) scale(1) skewX(40deg);
-    					}				
+    					}
 				}
 
 				.teaser-ditail {
@@ -572,7 +574,7 @@
 							@include prefix-transform(translateX(-32px));
 							color: #ffffff;
 							position: relative;
-							z-index: 2;							
+							z-index: 2;
 						}
 
 						.bg-link {
@@ -581,15 +583,12 @@
 							top: 0;
 							left: 0;
 							height: 100%;
-							width: 100%;		
+							width: 100%;
 							@include prefix-transform(translateX(-140%) skewX(40deg));
 						}
-					}					
+					}
 				}
 			}
 		}
 	}
 }
-
-
-
