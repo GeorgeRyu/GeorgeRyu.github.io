@@ -22,14 +22,21 @@ $bgWhite: #FAFAFA;
   -webkit-transform : $parameters;
   -moz-transform    : $parameters;
   -ms-transform     : $parameters;
-  transform         : $parameters;	
+  transform         : $parameters;
+}
+
+@mixin prefix-brightness($parameters) {
+	-webkit-filter: brightness($parameters);
+	-moz-filter: brightness($parameters);
+	-o-filter: brightness($parameters);
+	-ms-filter: brightness($parameters);
+	filter: brightness($parameters);
 }
 
 
 
-
 %hoverLine {
-	
+
 	&:before {
 		content: "";
 		position: absolute;
@@ -41,13 +48,35 @@ $bgWhite: #FAFAFA;
 	    margin: 4px auto 0;
 		background-color: $yellow;
 		transition: width .3s ease;
-	}					
+	}
 
 	&:hover::before {
 		width: 120%;
 	}
 }
 
+
+// ICONS HOVER FUNCTION IN ABOUT PAGE
+%hoverFicon {
+
+	&:hover {
+		.mft {
+			opacity: 1;
+			@include prefix-transform(translateX(-50%) translateY(-50%));
+		}
+
+		svg {
+			@include prefix-brightness(1.07);
+			.path {
+				fill: $yellow;
+			}
+		}
+
+		&:after {
+			height: 100%;
+		}
+	}
+}
 
 
 

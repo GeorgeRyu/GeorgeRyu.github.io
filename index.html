@@ -490,6 +490,7 @@
 				}).on('start', function () {
 
 					var heightImg = $('.front-page-1').parent(),
+						mainImg = $('.front-page-1'),
 						heightRectangle = $('.rectangle-01'),
 						line1 = $('.work1 .type'),
 						line2 = $('.work1 .title-work'),
@@ -498,7 +499,8 @@
 
 					tl
 						.to(heightImg, .4, {height: '32vw', ease:Power2.easeIn})
-						.to(heightRectangle, .4, {height: '120%', ease:Power2.easeIn})
+						.to(mainImg, 1, {scale: 1, ease:Power2.easeIn}, '-=.2')
+						.to(heightRectangle, .4, {height: '120%', ease:Power2.easeIn}, '-=.2')
 						.add('line1')
 						.to(line1, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut})
 						.to(line2, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.3')
@@ -519,6 +521,7 @@
 				}).on('start', function () {
 
 					var heightImg = $('.front-page-2').parent(),
+						mainImg = $('.front-page-2'),
 						heightRectangle = $('.rectangle-02'),
 						line1 = $('.work2 .type'),
 						line2 = $('.work2 .title-work'),
@@ -527,7 +530,8 @@
 
 					tl
 						.to(heightImg, .4, {height: '32vw', ease:Power2.easeIn})
-						.to(heightRectangle, .4, {height: '60%', ease:Power2.easeIn})
+						.to(mainImg, 1, {scale: 1, ease:Power2.easeIn}, '-=.2')
+						.to(heightRectangle, .4, {height: '60%', ease:Power2.easeIn}, '-=.2')
 						.add('line1')
 						.to(line1, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut})
 						.to(line2, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.3')
@@ -548,6 +552,7 @@
 				}).on('start', function () {
 
 					var heightImg = $('.front-page-3').parent(),
+						mainImg = $('.front-page-3'),
 						heightRectangle = $('.rectangle-03'),
 						line1 = $('.work3 .type'),
 						line2 = $('.work3 .title-work'),
@@ -556,7 +561,8 @@
 
 					tl
 						.to(heightImg, .4, {height: '32vw', ease:Power2.easeIn})
-						.to(heightRectangle, .4, {height: '140%', ease:Power2.easeIn})
+						.to(mainImg, 1, {scale: 1, ease:Power2.easeIn}, '-=.2')
+						.to(heightRectangle, .4, {height: '140%', ease:Power2.easeIn}, '-=.2')
 						.add('line1')
 						.to(line1, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut})
 						.to(line2, .8, {x: 0, autoAlpha: 1, ease:Power4.easeOut}, 'line1+=.3')
