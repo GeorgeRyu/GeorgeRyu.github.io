@@ -375,7 +375,8 @@
 					&.part2 {
 						.left-grada,
 						.right-grada {
-							bottom: 20%;
+							height: 320px;
+					    bottom: 16%;
 						}
 
 						.left-grada {
@@ -391,8 +392,10 @@
 						}
 
 						.viewarea-stuffs {
+							height: 320px;
+
 							.wrap-stuffs {
-								width: 800px;
+								width: 500px;
 
 								.staff {
 									width: 120px;
@@ -421,7 +424,7 @@
 				.wrap-a {
 					top: 700px;
 			    right: -16px;
-			    margin-bottom: 80px;
+			    margin-bottom: 160px;
 					@include prefix-transform(translateX(-24px));
 
 					&:hover {
